@@ -1,0 +1,62 @@
+[
+  {
+    "_id": {
+      "$oid": "5e41066762a34e1e2c647c05"
+    },
+    "name": "Mercury",
+    "description": "The most smallest and comfortable  hall in our cinema",
+    "_creator": {
+      "$oid": "5e40b9fc0eb9b81850e33cf8"
+    },
+    "_class": "hall",
+    "_createdAt": {
+      "$date": "2020-02-10T07:29:43.532Z"
+    },
+    "_editor": {
+      "$oid": "5e40b9fc0eb9b81850e33cf8"
+    },
+    "_updatedAt": {
+      "$date": "2020-02-27T08:05:04.987Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5e41073962a34e1e2c647c06"
+    },
+    "name": "Venus",
+    "description": "Medium-sized hall with advanced sound system",
+    "_creator": {
+      "$oid": "5e40b9fc0eb9b81850e33cf8"
+    },
+    "_class": "hall",
+    "_createdAt": {
+      "$date": "2020-02-10T07:33:13.394Z"
+    },
+    "_editor": {
+      "$oid": "5e40b9fc0eb9b81850e33cf8"
+    },
+    "_updatedAt": {
+      "$date": "2020-02-27T08:04:01.224Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5e4108a962a34e1e2c647c07"
+    },
+    "name": "Jupiter",
+    "description": "The largest and most impressive hall with an improved screen",
+    "_creator": {
+      "$oid": "5e40b9fc0eb9b81850e33cf8"
+    },
+    "_class": "hall",
+    "_createdAt": {
+      "$date": "2020-02-10T07:39:21.798Z"
+    },
+    "_editor": {
+      "$oid": "5e40b9fc0eb9b81850e33cf8"
+    },
+    "_updatedAt": {
+      "$date": "2020-02-27T08:11:05.963Z"
+    }
+  }
+]

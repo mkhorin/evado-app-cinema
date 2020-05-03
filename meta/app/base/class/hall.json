@@ -1,0 +1,187 @@
+{
+  "abstract": false,
+  "description": "Place where movie is shown",
+  "header": ".name",
+  "label": "Hall",
+  "attrs": [
+    {
+      "name": "name",
+      "label": "Name",
+      "type": "string",
+      "commonSearchable": true,
+      "eagerLoading": false,
+      "escape": true,
+      "hidden": false,
+      "history": false,
+      "multiple": false,
+      "orderNumber": 10,
+      "sortable": false,
+      "sortableRelation": false,
+      "readOnly": false,
+      "required": true,
+      "selectSearchable": true,
+      "trim": true,
+      "unique": true
+    },
+    {
+      "name": "description",
+      "label": "Description",
+      "type": "text",
+      "commonSearchable": false,
+      "eagerLoading": false,
+      "escape": true,
+      "hidden": false,
+      "history": false,
+      "multiple": false,
+      "orderNumber": 20,
+      "sortable": false,
+      "sortableRelation": false,
+      "readOnly": false,
+      "required": false,
+      "selectSearchable": false,
+      "trim": true,
+      "unique": false
+    },
+    {
+      "name": "seatCounter",
+      "label": "Seat counter",
+      "type": "calc",
+      "description": "Counts all seats in a hall",
+      "commonSearchable": false,
+      "eagerLoading": false,
+      "escape": true,
+      "expression": [
+        "$query",
+        "count",
+        "seat",
+        null,
+        {
+          "hall": ".$key"
+        }
+      ],
+      "hidden": false,
+      "history": false,
+      "multiple": false,
+      "orderNumber": 30,
+      "sortable": false,
+      "sortableRelation": false,
+      "readOnly": false,
+      "required": false,
+      "selectSearchable": false,
+      "trim": true,
+      "unique": false
+    },
+    {
+      "name": "seats",
+      "label": "Seats",
+      "type": "backref",
+      "description": "Hall seats",
+      "commands": [
+        "create",
+        "edit",
+        "delete"
+      ],
+      "commonSearchable": false,
+      "eagerLoading": false,
+      "escape": true,
+      "group": "seats",
+      "hidden": false,
+      "history": false,
+      "listView": "inHall",
+      "multiple": true,
+      "orderNumber": 40,
+      "sortable": false,
+      "sortableRelation": false,
+      "refAttr": "hall",
+      "refClass": "seat",
+      "readOnly": false,
+      "required": false,
+      "selectSearchable": false,
+      "trim": true,
+      "unique": false
+    },
+    {
+      "name": "screenings",
+      "label": "Screenings",
+      "type": "backref",
+      "commands": [
+        "create",
+        "edit",
+        "delete"
+      ],
+      "commonSearchable": false,
+      "eagerLoading": false,
+      "escape": true,
+      "group": "screening",
+      "hidden": false,
+      "history": false,
+      "multiple": true,
+      "options": {
+        "css": "no-label"
+      },
+      "orderNumber": 60,
+      "sortable": false,
+      "sortableRelation": false,
+      "refAttr": "hall",
+      "refClass": "screening",
+      "readOnly": false,
+      "required": false,
+      "selectSearchable": false,
+      "trim": true,
+      "unique": false
+    },
+    {
+      "name": "prices",
+      "label": "Prices",
+      "type": "backref",
+      "commands": [
+        "create",
+        "edit",
+        "delete"
+      ],
+      "commonSearchable": false,
+      "eagerLoading": false,
+      "escape": true,
+      "group": "pricing",
+      "hidden": false,
+      "history": false,
+      "multiple": true,
+      "orderNumber": 70,
+      "sortable": false,
+      "sortableRelation": false,
+      "refAttr": "hall",
+      "refClass": "pricing",
+      "readOnly": false,
+      "required": false,
+      "selectSearchable": false,
+      "trim": true,
+      "unique": false
+    }
+  ],
+  "groups": [
+    {
+      "name": "tabs",
+      "label": "Tabs",
+      "orderNumber": 1000,
+      "type": "tabs"
+    },
+    {
+      "name": "screening",
+      "label": "Screening",
+      "orderNumber": 1010,
+      "parent": "tabs"
+    },
+    {
+      "name": "pricing",
+      "label": "Pricing",
+      "orderNumber": 1020,
+      "parent": "tabs"
+    },
+    {
+      "name": "seats",
+      "label": "Seats",
+      "orderNumber": 1030,
+      "parent": "tabs"
+    }
+  ]
+}

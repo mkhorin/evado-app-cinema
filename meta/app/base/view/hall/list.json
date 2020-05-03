@@ -1,0 +1,18 @@
+{
+  "label": "List",
+  "description": "Default list",
+  "attrs": [
+    {
+      "name": "name",
+      "orderNumber": 10
+    },
+    {
+      "name": "description",
+      "orderNumber": 20
+    },
+    {
+      "name": "seatCounter",
+      "orderNumber": 30
+    }
+  ]
+}

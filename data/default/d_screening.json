@@ -1,0 +1,445 @@
+[
+  {
+    "_id": {
+      "$oid": "5e5772ccd949d61218425a33"
+    },
+    "active": true,
+    "date": {
+      "$date": "2020-04-05T07:30:00.000Z"
+    },
+    "movie": {
+      "$oid": "5e40f0a462a34e1e2c647bdb"
+    },
+    "hall": {
+      "$oid": "5e41066762a34e1e2c647c05"
+    },
+    "pricing": {
+      "$oid": "5e5767109fe1c31c38a6ee83"
+    },
+    "_creator": {
+      "$oid": "5e40b9fc0eb9b81850e33cf8"
+    },
+    "_class": "screening",
+    "_createdAt": {
+      "$date": "2020-02-27T07:42:04.530Z"
+    },
+    "_editor": {
+      "$oid": "5e40b9fc0eb9b81850e33cf8"
+    },
+    "_updatedAt": {
+      "$date": "2020-02-27T07:48:18.658Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5e577301d949d61218425a34"
+    },
+    "active": true,
+    "date": {
+      "$date": "2020-04-02T08:00:00.000Z"
+    },
+    "movie": {
+      "$oid": "5e40f0d762a34e1e2c647bdc"
+    },
+    "hall": {
+      "$oid": "5e41066762a34e1e2c647c05"
+    },
+    "pricing": {
+      "$oid": "5e5767109fe1c31c38a6ee83"
+    },
+    "_creator": {
+      "$oid": "5e40b9fc0eb9b81850e33cf8"
+    },
+    "_class": "screening",
+    "_createdAt": {
+      "$date": "2020-02-27T07:42:57.739Z"
+    },
+    "_editor": {
+      "$oid": "5e40b9fc0eb9b81850e33cf8"
+    },
+    "_updatedAt": {
+      "$date": "2020-02-27T07:47:47.968Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5e5773fad949d61218425a35"
+    },
+    "active": true,
+    "date": {
+      "$date": "2020-04-07T04:40:00.000Z"
+    },
+    "movie": {
+      "$oid": "5e40f21562a34e1e2c647be0"
+    },
+    "hall": {
+      "$oid": "5e41066762a34e1e2c647c05"
+    },
+    "pricing": {
+      "$oid": "5e5767109fe1c31c38a6ee83"
+    },
+    "_creator": {
+      "$oid": "5e40b9fc0eb9b81850e33cf8"
+    },
+    "_class": "screening",
+    "_createdAt": {
+      "$date": "2020-02-27T07:47:06.882Z"
+    },
+    "_editor": {
+      "$oid": "5e40b9fc0eb9b81850e33cf8"
+    },
+    "_updatedAt": {
+      "$date": "2020-02-27T07:48:11.694Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5e5777045c9bb71e38ac9d0b"
+    },
+    "active": true,
+    "date": {
+      "$date": "2020-04-12T07:10:00.000Z"
+    },
+    "movie": {
+      "$oid": "5e40f13462a34e1e2c647bdd"
+    },
+    "hall": {
+      "$oid": "5e41073962a34e1e2c647c06"
+    },
+    "pricing": {
+      "$oid": "5e5767209fe1c31c38a6ee84"
+    },
+    "_creator": {
+      "$oid": "5e40b9fc0eb9b81850e33cf8"
+    },
+    "_class": "screening",
+    "_createdAt": {
+      "$date": "2020-02-27T08:00:04.787Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5e5777195c9bb71e38ac9d0c"
+    },
+    "active": true,
+    "date": {
+      "$date": "2020-04-15T02:00:00.000Z"
+    },
+    "movie": {
+      "$oid": "5e40f1c862a34e1e2c647bdf"
+    },
+    "hall": {
+      "$oid": "5e41073962a34e1e2c647c06"
+    },
+    "pricing": {
+      "$oid": "5e5767209fe1c31c38a6ee84"
+    },
+    "_creator": {
+      "$oid": "5e40b9fc0eb9b81850e33cf8"
+    },
+    "_class": "screening",
+    "_createdAt": {
+      "$date": "2020-02-27T08:00:25.713Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5e5777315c9bb71e38ac9d0d"
+    },
+    "active": true,
+    "date": {
+      "$date": "2020-04-20T10:00:00.000Z"
+    },
+    "movie": {
+      "$oid": "5e40f25b62a34e1e2c647be1"
+    },
+    "hall": {
+      "$oid": "5e41073962a34e1e2c647c06"
+    },
+    "pricing": {
+      "$oid": "5e5767209fe1c31c38a6ee84"
+    },
+    "_creator": {
+      "$oid": "5e40b9fc0eb9b81850e33cf8"
+    },
+    "_class": "screening",
+    "_createdAt": {
+      "$date": "2020-02-27T08:00:49.950Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5e57775b5c9bb71e38ac9d0e"
+    },
+    "active": true,
+    "date": {
+      "$date": "2020-04-03T04:25:00.000Z"
+    },
+    "movie": {
+      "$oid": "5e40f18062a34e1e2c647bde"
+    },
+    "hall": {
+      "$oid": "5e41073962a34e1e2c647c06"
+    },
+    "pricing": {
+      "$oid": "5e5767209fe1c31c38a6ee84"
+    },
+    "_creator": {
+      "$oid": "5e40b9fc0eb9b81850e33cf8"
+    },
+    "_class": "screening",
+    "_createdAt": {
+      "$date": "2020-02-27T08:01:31.180Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5e5777785c9bb71e38ac9d0f"
+    },
+    "active": true,
+    "date": {
+      "$date": "2020-04-07T06:30:00.000Z"
+    },
+    "movie": {
+      "$oid": "5e40f2e962a34e1e2c647be2"
+    },
+    "hall": {
+      "$oid": "5e4108a962a34e1e2c647c07"
+    },
+    "pricing": {
+      "$oid": "5e5767439fe1c31c38a6ee85"
+    },
+    "_creator": {
+      "$oid": "5e40b9fc0eb9b81850e33cf8"
+    },
+    "_class": "screening",
+    "_createdAt": {
+      "$date": "2020-02-27T08:02:00.100Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5e5777b55c9bb71e38ac9d10"
+    },
+    "active": true,
+    "hall": {
+      "$oid": "5e41073962a34e1e2c647c06"
+    },
+    "date": {
+      "$date": "2020-04-08T04:40:00.000Z"
+    },
+    "movie": {
+      "$oid": "5e40f38962a34e1e2c647be3"
+    },
+    "pricing": {
+      "$oid": "5e5767209fe1c31c38a6ee84"
+    },
+    "_creator": {
+      "$oid": "5e40b9fc0eb9b81850e33cf8"
+    },
+    "_class": "screening",
+    "_createdAt": {
+      "$date": "2020-02-27T08:03:01.479Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5e5777d55c9bb71e38ac9d11"
+    },
+    "active": true,
+    "hall": {
+      "$oid": "5e41073962a34e1e2c647c06"
+    },
+    "date": {
+      "$date": "2020-02-04T10:05:00.000Z"
+    },
+    "movie": {
+      "$oid": "5e40f0a462a34e1e2c647bdb"
+    },
+    "pricing": {
+      "$oid": "5e5767209fe1c31c38a6ee84"
+    },
+    "_creator": {
+      "$oid": "5e40b9fc0eb9b81850e33cf8"
+    },
+    "_class": "screening",
+    "_createdAt": {
+      "$date": "2020-02-27T08:03:33.926Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5e5778595c9bb71e38ac9d14"
+    },
+    "active": true,
+    "hall": {
+      "$oid": "5e4108a962a34e1e2c647c07"
+    },
+    "date": {
+      "$date": "2020-04-14T07:10:00.000Z"
+    },
+    "movie": {
+      "$oid": "5e40f0d762a34e1e2c647bdc"
+    },
+    "pricing": {
+      "$oid": "5e5767439fe1c31c38a6ee85"
+    },
+    "_creator": {
+      "$oid": "5e40b9fc0eb9b81850e33cf8"
+    },
+    "_class": "screening",
+    "_createdAt": {
+      "$date": "2020-02-27T08:05:45.386Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5e5778735c9bb71e38ac9d15"
+    },
+    "active": true,
+    "hall": {
+      "$oid": "5e4108a962a34e1e2c647c07"
+    },
+    "date": {
+      "$date": "2020-04-02T04:40:00.000Z"
+    },
+    "movie": {
+      "$oid": "5e40f21562a34e1e2c647be0"
+    },
+    "pricing": {
+      "$oid": "5e5767439fe1c31c38a6ee85"
+    },
+    "_creator": {
+      "$oid": "5e40b9fc0eb9b81850e33cf8"
+    },
+    "_class": "screening",
+    "_createdAt": {
+      "$date": "2020-02-27T08:06:11.993Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5e5778925c9bb71e38ac9d16"
+    },
+    "active": true,
+    "hall": {
+      "$oid": "5e4108a962a34e1e2c647c07"
+    },
+    "date": {
+      "$date": "2020-04-20T13:00:00.000Z"
+    },
+    "movie": {
+      "$oid": "5e40f38962a34e1e2c647be3"
+    },
+    "pricing": {
+      "$oid": "5e5767439fe1c31c38a6ee85"
+    },
+    "_creator": {
+      "$oid": "5e40b9fc0eb9b81850e33cf8"
+    },
+    "_class": "screening",
+    "_createdAt": {
+      "$date": "2020-02-27T08:06:42.610Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5e57792e5c9bb71e38ac9d17"
+    },
+    "active": true,
+    "hall": {
+      "$oid": "5e4108a962a34e1e2c647c07"
+    },
+    "date": {
+      "$date": "2020-02-06T20:30:00.000Z"
+    },
+    "movie": {
+      "$oid": "5e40ee9462a34e1e2c647bd9"
+    },
+    "pricing": {
+      "$oid": "5e5767439fe1c31c38a6ee85"
+    },
+    "_creator": {
+      "$oid": "5e40b9fc0eb9b81850e33cf8"
+    },
+    "_class": "screening",
+    "_createdAt": {
+      "$date": "2020-02-27T08:09:18.470Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5e57794e5c9bb71e38ac9d18"
+    },
+    "active": true,
+    "hall": {
+      "$oid": "5e4108a962a34e1e2c647c07"
+    },
+    "date": {
+      "$date": "2020-04-27T10:20:00.000Z"
+    },
+    "movie": {
+      "$oid": "5e40f25b62a34e1e2c647be1"
+    },
+    "pricing": {
+      "$oid": "5e5767439fe1c31c38a6ee85"
+    },
+    "_creator": {
+      "$oid": "5e40b9fc0eb9b81850e33cf8"
+    },
+    "_class": "screening",
+    "_createdAt": {
+      "$date": "2020-02-27T08:09:50.960Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5e57796a5c9bb71e38ac9d19"
+    },
+    "active": true,
+    "hall": {
+      "$oid": "5e4108a962a34e1e2c647c07"
+    },
+    "date": {
+      "$date": "2020-04-10T03:30:00.000Z"
+    },
+    "movie": {
+      "$oid": "5e40f18062a34e1e2c647bde"
+    },
+    "pricing": {
+      "$oid": "5e5767439fe1c31c38a6ee85"
+    },
+    "_creator": {
+      "$oid": "5e40b9fc0eb9b81850e33cf8"
+    },
+    "_class": "screening",
+    "_createdAt": {
+      "$date": "2020-02-27T08:10:18.598Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5e5779985c9bb71e38ac9d1a"
+    },
+    "active": true,
+    "hall": {
+      "$oid": "5e4108a962a34e1e2c647c07"
+    },
+    "date": {
+      "$date": "2020-04-24T11:10:00.000Z"
+    },
+    "movie": {
+      "$oid": "5e40f21562a34e1e2c647be0"
+    },
+    "pricing": {
+      "$oid": "5e5767439fe1c31c38a6ee85"
+    },
+    "_creator": {
+      "$oid": "5e40b9fc0eb9b81850e33cf8"
+    },
+    "_class": "screening",
+    "_createdAt": {
+      "$date": "2020-02-27T08:11:04.304Z"
+    }
+  }
+]

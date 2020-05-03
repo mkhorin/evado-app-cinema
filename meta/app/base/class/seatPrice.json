@@ -1,0 +1,99 @@
+{
+  "abstract": false,
+  "header": [
+    ".seat",
+    " Price ",
+    ".value"
+  ],
+  "label": "Seat price",
+  "description": "Special place price",
+  "attrs": [
+    {
+      "name": "value",
+      "label": "Value",
+      "type": "integer",
+      "description": "Price value",
+      "commonSearchable": false,
+      "eagerLoading": false,
+      "escape": true,
+      "hidden": false,
+      "history": false,
+      "multiple": false,
+      "orderNumber": 10,
+      "sortable": false,
+      "sortableRelation": false,
+      "readOnly": false,
+      "required": true,
+      "selectSearchable": false,
+      "trim": true,
+      "unique": false
+    },
+    {
+      "name": "seat",
+      "label": "Seat",
+      "type": "ref",
+      "viewType": "relationSelect",
+      "commands": [
+        "add",
+        "edit"
+      ],
+      "commonSearchable": false,
+      "eagerLoading": true,
+      "escape": true,
+      "hidden": false,
+      "history": false,
+      "multiple": false,
+      "onDelete": "cascade",
+      "options": {
+        "relation": {
+          "depends": [
+            "pricing"
+          ]
+        }
+      },
+      "orderNumber": 20,
+      "sortable": false,
+      "sortableRelation": false,
+      "refClass": "seat",
+      "readOnly": false,
+      "required": true,
+      "selectListView": "selectFromPrice",
+      "selectSearchable": false,
+      "trim": true,
+      "unique": false,
+      "rules": [
+        {
+          "type": "unique",
+          "orderNumber": 10,
+          "filter": "pricing",
+          "ignoreCase": false
+        }
+      ]
+    },
+    {
+      "name": "pricing",
+      "label": "Pricing",
+      "type": "ref",
+      "viewType": "relationSelect",
+      "commands": [
+        "edit"
+      ],
+      "commonSearchable": false,
+      "eagerLoading": true,
+      "escape": true,
+      "hidden": false,
+      "history": false,
+      "multiple": false,
+      "onDelete": "cascade",
+      "orderNumber": 30,
+      "sortable": false,
+      "sortableRelation": false,
+      "refClass": "pricing",
+      "readOnly": true,
+      "required": true,
+      "selectSearchable": false,
+      "trim": true,
+      "unique": false
+    }
+  ]
+}

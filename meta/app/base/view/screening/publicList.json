@@ -1,0 +1,24 @@
+{
+  "label": "Public list",
+  "description": "Active screenings ",
+  "filter": {
+    "active": true
+  },
+  "order": {
+    "date": 1
+  },
+  "attrs": [
+    {
+      "name": "date",
+      "orderNumber": 30
+    },
+    {
+      "name": "movie",
+      "orderNumber": 40
+    },
+    {
+      "name": "hall",
+      "orderNumber": 50
+    }
+  ]
+}

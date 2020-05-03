@@ -1,0 +1,19 @@
+{
+  "label": "Select list",
+  "filter": {
+    "hall": [
+      "$dep",
+      "hall"
+    ]
+  },
+  "attrs": [
+    {
+      "name": "name",
+      "orderNumber": 20
+    },
+    {
+      "name": "value",
+      "orderNumber": 30
+    }
+  ]
+}

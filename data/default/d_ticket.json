@@ -1,0 +1,610 @@
+[
+  {
+    "_id": {
+      "$oid": "5e577acb5c9bb71e38ac9d1b"
+    },
+    "screening": {
+      "$oid": "5e5777785c9bb71e38ac9d0f"
+    },
+    "seat": {
+      "$oid": "5e4c8970a8455d2c489cc2b1"
+    },
+    "_creator": {
+      "$oid": "5e40b9fc0eb9b81850e33cf8"
+    },
+    "_class": "ticket",
+    "_createdAt": {
+      "$date": "2020-02-27T08:16:11.404Z"
+    },
+    "price": 10
+  },
+  {
+    "_id": {
+      "$oid": "5e577ace5c9bb71e38ac9d1c"
+    },
+    "screening": {
+      "$oid": "5e5777785c9bb71e38ac9d0f"
+    },
+    "seat": {
+      "$oid": "5e5397c2d4354315a497f211"
+    },
+    "_creator": {
+      "$oid": "5e40b9fc0eb9b81850e33cf8"
+    },
+    "_class": "ticket",
+    "_createdAt": {
+      "$date": "2020-02-27T08:16:14.462Z"
+    },
+    "price": 15
+  },
+  {
+    "_id": {
+      "$oid": "5e577ad15c9bb71e38ac9d1d"
+    },
+    "screening": {
+      "$oid": "5e5777785c9bb71e38ac9d0f"
+    },
+    "seat": {
+      "$oid": "5e5397f7d4354315a497f218"
+    },
+    "_creator": {
+      "$oid": "5e40b9fc0eb9b81850e33cf8"
+    },
+    "_class": "ticket",
+    "_createdAt": {
+      "$date": "2020-02-27T08:16:17.004Z"
+    },
+    "price": 15
+  },
+  {
+    "_id": {
+      "$oid": "5e577ad65c9bb71e38ac9d1e"
+    },
+    "screening": {
+      "$oid": "5e5777785c9bb71e38ac9d0f"
+    },
+    "seat": {
+      "$oid": "5e5397f2d4354315a497f217"
+    },
+    "_creator": {
+      "$oid": "5e40b9fc0eb9b81850e33cf8"
+    },
+    "_class": "ticket",
+    "_createdAt": {
+      "$date": "2020-02-27T08:16:22.018Z"
+    },
+    "price": 15
+  },
+  {
+    "_id": {
+      "$oid": "5e577ad95c9bb71e38ac9d1f"
+    },
+    "screening": {
+      "$oid": "5e5777785c9bb71e38ac9d0f"
+    },
+    "seat": {
+      "$oid": "5e5397ecd4354315a497f216"
+    },
+    "_creator": {
+      "$oid": "5e40b9fc0eb9b81850e33cf8"
+    },
+    "_class": "ticket",
+    "_createdAt": {
+      "$date": "2020-02-27T08:16:25.221Z"
+    },
+    "price": 15
+  },
+  {
+    "_id": {
+      "$oid": "5e577add5c9bb71e38ac9d20"
+    },
+    "screening": {
+      "$oid": "5e5777785c9bb71e38ac9d0f"
+    },
+    "seat": {
+      "$oid": "5e4cba937327c62d9c048d51"
+    },
+    "_creator": {
+      "$oid": "5e40b9fc0eb9b81850e33cf8"
+    },
+    "_class": "ticket",
+    "_createdAt": {
+      "$date": "2020-02-27T08:16:29.060Z"
+    },
+    "price": 10
+  },
+  {
+    "_id": {
+      "$oid": "5e577afb5c9bb71e38ac9d21"
+    },
+    "screening": {
+      "$oid": "5e5778735c9bb71e38ac9d15"
+    },
+    "seat": {
+      "$oid": "5e5397f2d4354315a497f217"
+    },
+    "_creator": {
+      "$oid": "5e40b9fc0eb9b81850e33cf8"
+    },
+    "_class": "ticket",
+    "_createdAt": {
+      "$date": "2020-02-27T08:16:59.641Z"
+    },
+    "price": 15
+  },
+  {
+    "_id": {
+      "$oid": "5e577afe5c9bb71e38ac9d22"
+    },
+    "screening": {
+      "$oid": "5e5778735c9bb71e38ac9d15"
+    },
+    "seat": {
+      "$oid": "5e5397ecd4354315a497f216"
+    },
+    "_creator": {
+      "$oid": "5e40b9fc0eb9b81850e33cf8"
+    },
+    "_class": "ticket",
+    "_createdAt": {
+      "$date": "2020-02-27T08:17:02.372Z"
+    },
+    "price": 15
+  },
+  {
+    "_id": {
+      "$oid": "5e577b005c9bb71e38ac9d23"
+    },
+    "screening": {
+      "$oid": "5e5778735c9bb71e38ac9d15"
+    },
+    "seat": {
+      "$oid": "5e5397f7d4354315a497f218"
+    },
+    "_creator": {
+      "$oid": "5e40b9fc0eb9b81850e33cf8"
+    },
+    "_class": "ticket",
+    "_createdAt": {
+      "$date": "2020-02-27T08:17:04.981Z"
+    },
+    "price": 15
+  },
+  {
+    "_id": {
+      "$oid": "5e577b115c9bb71e38ac9d24"
+    },
+    "screening": {
+      "$oid": "5e5777d55c9bb71e38ac9d11"
+    },
+    "seat": {
+      "$oid": "5e539723d4354315a497f205"
+    },
+    "_creator": {
+      "$oid": "5e40b9fc0eb9b81850e33cf8"
+    },
+    "_class": "ticket",
+    "_createdAt": {
+      "$date": "2020-02-27T08:17:21.840Z"
+    },
+    "price": 10
+  },
+  {
+    "_id": {
+      "$oid": "5e577b145c9bb71e38ac9d25"
+    },
+    "screening": {
+      "$oid": "5e5777d55c9bb71e38ac9d11"
+    },
+    "seat": {
+      "$oid": "5e539729d4354315a497f206"
+    },
+    "_creator": {
+      "$oid": "5e40b9fc0eb9b81850e33cf8"
+    },
+    "_class": "ticket",
+    "_createdAt": {
+      "$date": "2020-02-27T08:17:24.622Z"
+    },
+    "price": 10
+  },
+  {
+    "_id": {
+      "$oid": "5e577b1f5c9bb71e38ac9d26"
+    },
+    "screening": {
+      "$oid": "5e57775b5c9bb71e38ac9d0e"
+    },
+    "seat": {
+      "$oid": "5e4cbb227327c62d9c048d5d"
+    },
+    "_creator": {
+      "$oid": "5e40b9fc0eb9b81850e33cf8"
+    },
+    "_class": "ticket",
+    "_createdAt": {
+      "$date": "2020-02-27T08:17:35.041Z"
+    },
+    "price": 5
+  },
+  {
+    "_id": {
+      "$oid": "5e577b215c9bb71e38ac9d27"
+    },
+    "screening": {
+      "$oid": "5e57775b5c9bb71e38ac9d0e"
+    },
+    "seat": {
+      "$oid": "5e539709d4354315a497f202"
+    },
+    "_creator": {
+      "$oid": "5e40b9fc0eb9b81850e33cf8"
+    },
+    "_class": "ticket",
+    "_createdAt": {
+      "$date": "2020-02-27T08:17:37.227Z"
+    },
+    "price": 10
+  },
+  {
+    "_id": {
+      "$oid": "5e577b2c5c9bb71e38ac9d28"
+    },
+    "screening": {
+      "$oid": "5e5777b55c9bb71e38ac9d10"
+    },
+    "seat": {
+      "$oid": "5e539723d4354315a497f205"
+    },
+    "_creator": {
+      "$oid": "5e40b9fc0eb9b81850e33cf8"
+    },
+    "_class": "ticket",
+    "_createdAt": {
+      "$date": "2020-02-27T08:17:48.526Z"
+    },
+    "price": 10
+  },
+  {
+    "_id": {
+      "$oid": "5e577b2e5c9bb71e38ac9d29"
+    },
+    "screening": {
+      "$oid": "5e5777b55c9bb71e38ac9d10"
+    },
+    "seat": {
+      "$oid": "5e5398a2d4354315a497f229"
+    },
+    "_creator": {
+      "$oid": "5e40b9fc0eb9b81850e33cf8"
+    },
+    "_class": "ticket",
+    "_createdAt": {
+      "$date": "2020-02-27T08:17:50.820Z"
+    },
+    "price": 10
+  },
+  {
+    "_id": {
+      "$oid": "5e577b315c9bb71e38ac9d2a"
+    },
+    "screening": {
+      "$oid": "5e5777b55c9bb71e38ac9d10"
+    },
+    "seat": {
+      "$oid": "5e53972ed4354315a497f207"
+    },
+    "_creator": {
+      "$oid": "5e40b9fc0eb9b81850e33cf8"
+    },
+    "_class": "ticket",
+    "_createdAt": {
+      "$date": "2020-02-27T08:17:53.544Z"
+    },
+    "price": 10
+  },
+  {
+    "_id": {
+      "$oid": "5e577b345c9bb71e38ac9d2b"
+    },
+    "screening": {
+      "$oid": "5e5777b55c9bb71e38ac9d10"
+    },
+    "seat": {
+      "$oid": "5e539729d4354315a497f206"
+    },
+    "_creator": {
+      "$oid": "5e40b9fc0eb9b81850e33cf8"
+    },
+    "_class": "ticket",
+    "_createdAt": {
+      "$date": "2020-02-27T08:17:56.123Z"
+    },
+    "price": 10
+  },
+  {
+    "_id": {
+      "$oid": "5e577b3b5c9bb71e38ac9d2c"
+    },
+    "screening": {
+      "$oid": "5e5777195c9bb71e38ac9d0c"
+    },
+    "seat": {
+      "$oid": "5e539729d4354315a497f206"
+    },
+    "_creator": {
+      "$oid": "5e40b9fc0eb9b81850e33cf8"
+    },
+    "_class": "ticket",
+    "_createdAt": {
+      "$date": "2020-02-27T08:18:03.618Z"
+    },
+    "price": 10
+  },
+  {
+    "_id": {
+      "$oid": "5e577b445c9bb71e38ac9d2d"
+    },
+    "screening": {
+      "$oid": "5e5777315c9bb71e38ac9d0d"
+    },
+    "seat": {
+      "$oid": "5e5398a2d4354315a497f229"
+    },
+    "_creator": {
+      "$oid": "5e40b9fc0eb9b81850e33cf8"
+    },
+    "_class": "ticket",
+    "_createdAt": {
+      "$date": "2020-02-27T08:18:12.239Z"
+    },
+    "price": 10
+  },
+  {
+    "_id": {
+      "$oid": "5e577b465c9bb71e38ac9d2e"
+    },
+    "screening": {
+      "$oid": "5e5777315c9bb71e38ac9d0d"
+    },
+    "seat": {
+      "$oid": "5e53989cd4354315a497f228"
+    },
+    "_creator": {
+      "$oid": "5e40b9fc0eb9b81850e33cf8"
+    },
+    "_class": "ticket",
+    "_createdAt": {
+      "$date": "2020-02-27T08:18:14.914Z"
+    },
+    "price": 10
+  },
+  {
+    "_id": {
+      "$oid": "5e577b4f5c9bb71e38ac9d2f"
+    },
+    "screening": {
+      "$oid": "5e5777045c9bb71e38ac9d0b"
+    },
+    "seat": {
+      "$oid": "5e539709d4354315a497f202"
+    },
+    "_creator": {
+      "$oid": "5e40b9fc0eb9b81850e33cf8"
+    },
+    "_class": "ticket",
+    "_createdAt": {
+      "$date": "2020-02-27T08:18:23.071Z"
+    },
+    "price": 10
+  },
+  {
+    "_id": {
+      "$oid": "5e577b5e5c9bb71e38ac9d30"
+    },
+    "screening": {
+      "$oid": "5e57792e5c9bb71e38ac9d17"
+    },
+    "seat": {
+      "$oid": "5e5397f2d4354315a497f217"
+    },
+    "_creator": {
+      "$oid": "5e40b9fc0eb9b81850e33cf8"
+    },
+    "_class": "ticket",
+    "_createdAt": {
+      "$date": "2020-02-27T08:18:38.726Z"
+    },
+    "price": 15
+  },
+  {
+    "_id": {
+      "$oid": "5e577b615c9bb71e38ac9d31"
+    },
+    "screening": {
+      "$oid": "5e57792e5c9bb71e38ac9d17"
+    },
+    "seat": {
+      "$oid": "5e5397ecd4354315a497f216"
+    },
+    "_creator": {
+      "$oid": "5e40b9fc0eb9b81850e33cf8"
+    },
+    "_class": "ticket",
+    "_createdAt": {
+      "$date": "2020-02-27T08:18:41.006Z"
+    },
+    "price": 15
+  },
+  {
+    "_id": {
+      "$oid": "5e577b645c9bb71e38ac9d32"
+    },
+    "screening": {
+      "$oid": "5e57792e5c9bb71e38ac9d17"
+    },
+    "seat": {
+      "$oid": "5e5397e7d4354315a497f215"
+    },
+    "_creator": {
+      "$oid": "5e40b9fc0eb9b81850e33cf8"
+    },
+    "_class": "ticket",
+    "_createdAt": {
+      "$date": "2020-02-27T08:18:44.411Z"
+    },
+    "price": 15
+  },
+  {
+    "_id": {
+      "$oid": "5e577b725c9bb71e38ac9d33"
+    },
+    "screening": {
+      "$oid": "5e577301d949d61218425a34"
+    },
+    "seat": {
+      "$oid": "5e4cbaca7327c62d9c048d56"
+    },
+    "_creator": {
+      "$oid": "5e40b9fc0eb9b81850e33cf8"
+    },
+    "_class": "ticket",
+    "_createdAt": {
+      "$date": "2020-02-27T08:18:58.504Z"
+    },
+    "price": 5
+  },
+  {
+    "_id": {
+      "$oid": "5e577b755c9bb71e38ac9d34"
+    },
+    "screening": {
+      "$oid": "5e577301d949d61218425a34"
+    },
+    "seat": {
+      "$oid": "5e4cbad27327c62d9c048d57"
+    },
+    "_creator": {
+      "$oid": "5e40b9fc0eb9b81850e33cf8"
+    },
+    "_class": "ticket",
+    "_createdAt": {
+      "$date": "2020-02-27T08:19:01.729Z"
+    },
+    "price": 5
+  },
+  {
+    "_id": {
+      "$oid": "5e577b785c9bb71e38ac9d35"
+    },
+    "screening": {
+      "$oid": "5e577301d949d61218425a34"
+    },
+    "seat": {
+      "$oid": "5e4cbae47327c62d9c048d5a"
+    },
+    "_creator": {
+      "$oid": "5e40b9fc0eb9b81850e33cf8"
+    },
+    "_class": "ticket",
+    "_createdAt": {
+      "$date": "2020-02-27T08:19:04.141Z"
+    },
+    "price": 5
+  },
+  {
+    "_id": {
+      "$oid": "5e577b845c9bb71e38ac9d36"
+    },
+    "screening": {
+      "$oid": "5e5772ccd949d61218425a33"
+    },
+    "seat": {
+      "$oid": "5e4cbadf7327c62d9c048d59"
+    },
+    "_creator": {
+      "$oid": "5e40b9fc0eb9b81850e33cf8"
+    },
+    "_class": "ticket",
+    "_createdAt": {
+      "$date": "2020-02-27T08:19:16.406Z"
+    },
+    "price": 5
+  },
+  {
+    "_id": {
+      "$oid": "5e577b875c9bb71e38ac9d37"
+    },
+    "screening": {
+      "$oid": "5e5772ccd949d61218425a33"
+    },
+    "seat": {
+      "$oid": "5e4cbab87327c62d9c048d54"
+    },
+    "_creator": {
+      "$oid": "5e40b9fc0eb9b81850e33cf8"
+    },
+    "_class": "ticket",
+    "_createdAt": {
+      "$date": "2020-02-27T08:19:19.079Z"
+    },
+    "price": 3
+  },
+  {
+    "_id": {
+      "$oid": "5e577b915c9bb71e38ac9d38"
+    },
+    "screening": {
+      "$oid": "5e5773fad949d61218425a35"
+    },
+    "seat": {
+      "$oid": "5e4cbaca7327c62d9c048d56"
+    },
+    "_creator": {
+      "$oid": "5e40b9fc0eb9b81850e33cf8"
+    },
+    "_class": "ticket",
+    "_createdAt": {
+      "$date": "2020-02-27T08:19:29.305Z"
+    },
+    "price": 5
+  },
+  {
+    "_id": {
+      "$oid": "5e577b935c9bb71e38ac9d39"
+    },
+    "screening": {
+      "$oid": "5e5773fad949d61218425a35"
+    },
+    "seat": {
+      "$oid": "5e4cbad27327c62d9c048d57"
+    },
+    "_creator": {
+      "$oid": "5e40b9fc0eb9b81850e33cf8"
+    },
+    "_class": "ticket",
+    "_createdAt": {
+      "$date": "2020-02-27T08:19:31.442Z"
+    },
+    "price": 5
+  },
+  {
+    "_id": {
+      "$oid": "5e577b965c9bb71e38ac9d3a"
+    },
+    "screening": {
+      "$oid": "5e5773fad949d61218425a35"
+    },
+    "seat": {
+      "$oid": "5e4cbabe7327c62d9c048d55"
+    },
+    "_creator": {
+      "$oid": "5e40b9fc0eb9b81850e33cf8"
+    },
+    "_class": "ticket",
+    "_createdAt": {
+      "$date": "2020-02-27T08:19:34.191Z"
+    },
+    "price": 3
+  }
+]

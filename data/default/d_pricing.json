@@ -1,0 +1,111 @@
+[
+  {
+    "_id": {
+      "$oid": "5e5767109fe1c31c38a6ee83"
+    },
+    "name": "Base Mercury price",
+    "value": 5,
+    "hall": {
+      "$oid": "5e41066762a34e1e2c647c05"
+    },
+    "_creator": {
+      "$oid": "5e40b9fc0eb9b81850e33cf8"
+    },
+    "_class": "pricing",
+    "_createdAt": {
+      "$date": "2020-02-27T06:52:00.150Z"
+    },
+    "_editor": {
+      "$oid": "5e40b9fc0eb9b81850e33cf8"
+    },
+    "_updatedAt": {
+      "$date": "2020-02-27T06:56:46.440Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5e5767209fe1c31c38a6ee84"
+    },
+    "name": "Base Venus price",
+    "value": 10,
+    "hall": {
+      "$oid": "5e41073962a34e1e2c647c06"
+    },
+    "_creator": {
+      "$oid": "5e40b9fc0eb9b81850e33cf8"
+    },
+    "_class": "pricing",
+    "_createdAt": {
+      "$date": "2020-02-27T06:52:16.143Z"
+    },
+    "_editor": {
+      "$oid": "5e40b9fc0eb9b81850e33cf8"
+    },
+    "_updatedAt": {
+      "$date": "2020-02-27T06:57:42.965Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5e5767439fe1c31c38a6ee85"
+    },
+    "name": "Base Jupiter price",
+    "value": 15,
+    "hall": {
+      "$oid": "5e4108a962a34e1e2c647c07"
+    },
+    "_creator": {
+      "$oid": "5e40b9fc0eb9b81850e33cf8"
+    },
+    "_class": "pricing",
+    "_createdAt": {
+      "$date": "2020-02-27T06:52:51.429Z"
+    },
+    "_editor": {
+      "$oid": "5e40b9fc0eb9b81850e33cf8"
+    },
+    "_updatedAt": {
+      "$date": "2020-02-27T06:59:48.341Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5e5777ef5c9bb71e38ac9d12"
+    },
+    "hall": {
+      "$oid": "5e41073962a34e1e2c647c06"
+    },
+    "name": "Holiday Venus price",
+    "value": 12,
+    "_creator": {
+      "$oid": "5e40b9fc0eb9b81850e33cf8"
+    },
+    "_class": "pricing",
+    "_createdAt": {
+      "$date": "2020-02-27T08:03:59.540Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5e5778265c9bb71e38ac9d13"
+    },
+    "hall": {
+      "$oid": "5e41066762a34e1e2c647c05"
+    },
+    "name": "Weekend Mercury  price",
+    "value": 7,
+    "_creator": {
+      "$oid": "5e40b9fc0eb9b81850e33cf8"
+    },
+    "_class": "pricing",
+    "_createdAt": {
+      "$date": "2020-02-27T08:04:54.534Z"
+    },
+    "_editor": {
+      "$oid": "5e40b9fc0eb9b81850e33cf8"
+    },
+    "_updatedAt": {
+      "$date": "2020-02-27T08:05:03.465Z"
+    }
+  }
+]

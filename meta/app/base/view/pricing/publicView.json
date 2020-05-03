@@ -1,0 +1,14 @@
+{
+  "label": "Public view",
+  "attrs": [
+    {
+      "name": "value",
+      "orderNumber": 20
+    },
+    {
+      "name": "prices",
+      "eagerLoading": true,
+      "orderNumber": 40
+    }
+  ]
+}

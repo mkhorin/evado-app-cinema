@@ -1,0 +1,242 @@
+[
+  {
+    "_id": {
+      "$oid": "5e40ee9462a34e1e2c647bd9"
+    },
+    "title": "Pulp Fiction",
+    "description": "The lives of two mob hitmen, a boxer, a gangster and his wife, and a pair of diner bandits intertwine in four tales of violence and redemption.",
+    "duration": 150,
+    "poster": {
+      "$oid": "5e4102b262a34e1e2c647bfe"
+    },
+    "_creator": {
+      "$oid": "5e40b9fc0eb9b81850e33cf8"
+    },
+    "_class": "movie",
+    "_createdAt": {
+      "$date": "2020-02-10T05:48:04.233Z"
+    },
+    "_editor": {
+      "$oid": "5e40b9fc0eb9b81850e33cf8"
+    },
+    "_updatedAt": {
+      "$date": "2020-02-10T07:15:08.101Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5e40f0a462a34e1e2c647bdb"
+    },
+    "title": "Alien",
+    "description": "After a space merchant vessel receives an unknown transmission as a distress call, one of the crew is attacked by a mysterious life form and they soon realize that its life cycle has merely begun.",
+    "duration": 120,
+    "poster": {
+      "$oid": "5e41009162a34e1e2c647be6"
+    },
+    "_creator": {
+      "$oid": "5e40b9fc0eb9b81850e33cf8"
+    },
+    "_class": "movie",
+    "_createdAt": {
+      "$date": "2020-02-10T05:56:52.414Z"
+    },
+    "_editor": {
+      "$oid": "5e40b9fc0eb9b81850e33cf8"
+    },
+    "_updatedAt": {
+      "$date": "2020-02-10T07:09:20.030Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5e40f0d762a34e1e2c647bdc"
+    },
+    "title": "Blade Runner",
+    "description": "A blade runner must pursue and terminate four replicants who stole a ship in space, and have returned to Earth to find their creator.",
+    "duration": 115,
+    "poster": {
+      "$oid": "5e4100a162a34e1e2c647be9"
+    },
+    "_creator": {
+      "$oid": "5e40b9fc0eb9b81850e33cf8"
+    },
+    "_class": "movie",
+    "_createdAt": {
+      "$date": "2020-02-10T05:57:43.530Z"
+    },
+    "_editor": {
+      "$oid": "5e40b9fc0eb9b81850e33cf8"
+    },
+    "_updatedAt": {
+      "$date": "2020-02-10T07:15:16.409Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5e40f13462a34e1e2c647bdd"
+    },
+    "title": "Fight Club",
+    "description": "An office worker and a devil-may-care soapmaker form an underground fight club that evolves into something much, much more.",
+    "duration": 140,
+    "poster": {
+      "$oid": "5e4101fe62a34e1e2c647bef"
+    },
+    "_creator": {
+      "$oid": "5e40b9fc0eb9b81850e33cf8"
+    },
+    "_class": "movie",
+    "_createdAt": {
+      "$date": "2020-02-10T05:59:16.000Z"
+    },
+    "_editor": {
+      "$oid": "5e40b9fc0eb9b81850e33cf8"
+    },
+    "_updatedAt": {
+      "$date": "2020-02-10T07:15:29.712Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5e40f18062a34e1e2c647bde"
+    },
+    "title": "Inception",
+    "description": "A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind.",
+    "duration": 145,
+    "poster": {
+      "$oid": "5e41026b62a34e1e2c647bf5"
+    },
+    "_creator": {
+      "$oid": "5e40b9fc0eb9b81850e33cf8"
+    },
+    "_class": "movie",
+    "_createdAt": {
+      "$date": "2020-02-10T06:00:32.420Z"
+    },
+    "_editor": {
+      "$oid": "5e40b9fc0eb9b81850e33cf8"
+    },
+    "_updatedAt": {
+      "$date": "2020-02-10T07:15:58.834Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5e40f1c862a34e1e2c647bdf"
+    },
+    "title": "Jurassic Park",
+    "description": "Paleontologist visiting an almost complete theme park is tasked with protecting a couple of kids after a power failure causes the park's cloned dinosaurs to run loose.",
+    "duration": 125,
+    "poster": {
+      "$oid": "5e41028762a34e1e2c647bf8"
+    },
+    "_creator": {
+      "$oid": "5e40b9fc0eb9b81850e33cf8"
+    },
+    "_class": "movie",
+    "_createdAt": {
+      "$date": "2020-02-10T06:01:44.215Z"
+    },
+    "_editor": {
+      "$oid": "5e40b9fc0eb9b81850e33cf8"
+    },
+    "_updatedAt": {
+      "$date": "2020-02-10T07:16:06.351Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5e40f21562a34e1e2c647be0"
+    },
+    "title": "Die Hard",
+    "description": "An officer tries to save his wife and several others taken hostage by terrorists during a Christmas party at the Nakatomi Plaza in Los Angeles.",
+    "duration": 130,
+    "poster": {
+      "$oid": "5e4101e462a34e1e2c647bec"
+    },
+    "_creator": {
+      "$oid": "5e40b9fc0eb9b81850e33cf8"
+    },
+    "_class": "movie",
+    "_createdAt": {
+      "$date": "2020-02-10T06:03:01.474Z"
+    },
+    "_editor": {
+      "$oid": "5e40b9fc0eb9b81850e33cf8"
+    },
+    "_updatedAt": {
+      "$date": "2020-02-10T07:16:20.613Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5e40f25b62a34e1e2c647be1"
+    },
+    "title": "The Matrix",
+    "description": "A computer hacker learns from mysterious rebels about the true nature of his reality and his role in the war against its controllers.",
+    "duration": 135,
+    "poster": {
+      "$oid": "5e41029d62a34e1e2c647bfb"
+    },
+    "_creator": {
+      "$oid": "5e40b9fc0eb9b81850e33cf8"
+    },
+    "_class": "movie",
+    "_createdAt": {
+      "$date": "2020-02-10T06:04:11.217Z"
+    },
+    "_editor": {
+      "$oid": "5e40b9fc0eb9b81850e33cf8"
+    },
+    "_updatedAt": {
+      "$date": "2020-02-10T07:16:27.647Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5e40f2e962a34e1e2c647be2"
+    },
+    "title": "Se7en",
+    "description": "Two detectives, a rookie and a veteran, hunt a serial killer who uses the seven deadly sins as his motives.",
+    "duration": 115,
+    "poster": {
+      "$oid": "5e4102bd62a34e1e2c647c01"
+    },
+    "_creator": {
+      "$oid": "5e40b9fc0eb9b81850e33cf8"
+    },
+    "_class": "movie",
+    "_createdAt": {
+      "$date": "2020-02-10T06:06:33.464Z"
+    },
+    "_editor": {
+      "$oid": "5e40b9fc0eb9b81850e33cf8"
+    },
+    "_updatedAt": {
+      "$date": "2020-02-10T07:16:34.055Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5e40f38962a34e1e2c647be3"
+    },
+    "title": "Gladiator",
+    "description": "A former Roman general sets out to exact vengeance against the corrupt emperor who murdered his family and sent him into slavery.",
+    "duration": 145,
+    "poster": {
+      "$oid": "5e41024d62a34e1e2c647bf2"
+    },
+    "_creator": {
+      "$oid": "5e40b9fc0eb9b81850e33cf8"
+    },
+    "_class": "movie",
+    "_createdAt": {
+      "$date": "2020-02-10T06:09:13.483Z"
+    },
+    "_editor": {
+      "$oid": "5e40b9fc0eb9b81850e33cf8"
+    },
+    "_updatedAt": {
+      "$date": "2020-02-10T07:16:42.446Z"
+    }
+  }
+]

@@ -1,0 +1,36 @@
+{
+  "label": "Main",
+  "description": "Sidebar menu",
+  "nodes": [
+    {
+      "name": "halls",
+      "label": "Halls",
+      "orderNumber": 10,
+      "class": "hall"
+    },
+    {
+      "name": "movies",
+      "label": "Movies",
+      "orderNumber": 20,
+      "class": "movie"
+    },
+    {
+      "name": "posters",
+      "label": "Posters",
+      "orderNumber": 30,
+      "class": "poster"
+    },
+    {
+      "name": "pricing",
+      "label": "Pricing",
+      "orderNumber": 40,
+      "class": "pricing"
+    },
+    {
+      "name": "screenings",
+      "label": "Screenings",
+      "orderNumber": 50,
+      "class": "screening"
+    }
+  ]
+}

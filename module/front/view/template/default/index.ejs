@@ -1,0 +1,17 @@
+<%
+layout(_view.get('_layout/content'));
+
+script('front/script/Cinema.js');
+script('front/script/Page.js');
+script('front/script/Screening.js');
+script('front/script/ScreeningList.js');
+script('front/script/module.js');
+%>
+
+<div class="cinema">
+
+    <%- include('./_schedule') %>
+    <%- include('./_hall') %>
+    <%- include('./_screening') %>
+
+</div>

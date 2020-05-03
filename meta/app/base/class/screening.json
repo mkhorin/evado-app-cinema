@@ -1,0 +1,242 @@
+{
+  "abstract": false,
+  "description": "Film demonstration",
+  "header": [
+    [
+      "$moment",
+      ".date",
+      "format",
+      "L LT"
+    ],
+    " - ",
+    ".movie",
+    " - ",
+    ".hall",
+    " hall"
+  ],
+  "label": "Screening",
+  "order": {
+    "date": 1
+  },
+  "attrs": [
+    {
+      "name": "active",
+      "label": "Active",
+      "type": "boolean",
+      "description": "Active for ticket sales",
+      "commonSearchable": false,
+      "defaultValue": "true",
+      "eagerLoading": false,
+      "escape": true,
+      "hidden": false,
+      "history": false,
+      "multiple": false,
+      "orderNumber": 10,
+      "sortable": false,
+      "sortableRelation": false,
+      "readOnly": false,
+      "required": false,
+      "selectSearchable": false,
+      "trim": true,
+      "unique": false
+    },
+    {
+      "name": "date",
+      "label": "Date",
+      "type": "date",
+      "viewType": "localDatetime",
+      "description": "Movie screening time",
+      "commonSearchable": false,
+      "eagerLoading": false,
+      "escape": true,
+      "hidden": false,
+      "history": false,
+      "multiple": false,
+      "options": {
+        "momentFormat": "L LT"
+      },
+      "orderNumber": 30,
+      "sortable": true,
+      "sortableRelation": false,
+      "readOnly": false,
+      "required": true,
+      "selectSearchable": false,
+      "trim": true,
+      "unique": false
+    },
+    {
+      "name": "movie",
+      "label": "Movie",
+      "type": "ref",
+      "viewType": "relationSelect",
+      "commands": [
+        "add",
+        "edit"
+      ],
+      "commonSearchable": false,
+      "eagerLoading": true,
+      "escape": true,
+      "hidden": false,
+      "history": false,
+      "multiple": false,
+      "onDelete": "cascade",
+      "orderNumber": 40,
+      "sortable": false,
+      "sortableRelation": false,
+      "refClass": "movie",
+      "readOnly": false,
+      "required": true,
+      "selectSearchable": false,
+      "trim": true,
+      "unique": false
+    },
+    {
+      "name": "hall",
+      "label": "Hall",
+      "type": "ref",
+      "viewType": "relationSelect",
+      "commands": [
+        "add",
+        "edit"
+      ],
+      "commonSearchable": false,
+      "eagerLoading": true,
+      "escape": true,
+      "hidden": false,
+      "history": false,
+      "multiple": false,
+      "onDelete": "cascade",
+      "orderNumber": 50,
+      "sortable": false,
+      "sortableRelation": false,
+      "refClass": "hall",
+      "readOnly": true,
+      "required": true,
+      "selectSearchable": false,
+      "trim": true,
+      "unique": false
+    },
+    {
+      "name": "pricing",
+      "label": "Pricing",
+      "type": "ref",
+      "commands": [
+        "add",
+        "edit"
+      ],
+      "commonSearchable": false,
+      "eagerLoading": false,
+      "escape": true,
+      "group": "pricing",
+      "hidden": false,
+      "history": false,
+      "multiple": false,
+      "onDelete": "null",
+      "options": {
+        "relation": {
+          "depends": [
+            "hall"
+          ]
+        }
+      },
+      "orderNumber": 60,
+      "sortable": false,
+      "sortableRelation": false,
+      "refClass": "pricing",
+      "readOnly": false,
+      "required": true,
+      "selectListView": "selectList",
+      "selectSearchable": false,
+      "trim": true,
+      "unique": false
+    },
+    {
+      "name": "tickets",
+      "label": "Tickets",
+      "type": "backref",
+      "commands": [
+        "create",
+        "edit",
+        "delete"
+      ],
+      "commonSearchable": false,
+      "eagerLoading": false,
+      "escape": true,
+      "group": "tickets",
+      "hidden": false,
+      "history": false,
+      "listView": "inScreening",
+      "multiple": true,
+      "orderNumber": 70,
+      "sortable": false,
+      "sortableRelation": false,
+      "refAttr": "screening",
+      "refClass": "ticket",
+      "readOnly": false,
+      "required": false,
+      "selectSearchable": false,
+      "trim": true,
+      "unique": false,
+      "options": {
+        "css": "no-label"
+      }
+    },
+    {
+      "name": "freeSeats",
+      "label": "Free seats",
+      "type": "backref",
+      "commands": [
+        "edit"
+      ],
+      "commonSearchable": false,
+      "eagerLoading": false,
+      "escape": true,
+      "finder": {
+        "Class": "component/meta/relation/FreeSeatsFinder"
+      },
+      "group": "freeSeats",
+      "hidden": false,
+      "history": false,
+      "multiple": true,
+      "orderNumber": 80,
+      "sortable": false,
+      "sortableRelation": false,
+      "refClass": "seat",
+      "readOnly": true,
+      "required": false,
+      "selectSearchable": false,
+      "trim": true,
+      "unique": false,
+      "options": {
+        "css": "no-label"
+      }
+    }
+  ],
+  "groups": [
+    {
+      "name": "tabs",
+      "label": "Tabs",
+      "orderNumber": 1000,
+      "type": "tabs"
+    },
+    {
+      "active": true,
+      "name": "pricing",
+      "label": "Pricing",
+      "orderNumber": 1010,
+      "parent": "tabs"
+    },
+    {
+      "name": "tickets",
+      "label": "Tickets",
+      "orderNumber": 1020,
+      "parent": "tabs"
+    },
+    {
+      "name": "freeSeats",
+      "label": "Free seats",
+      "orderNumber": 1030,
+      "parent": "tabs"
+    }
+  ]
+}

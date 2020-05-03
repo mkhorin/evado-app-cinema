@@ -1,0 +1,886 @@
+[
+  {
+    "_id": {
+      "$oid": "5e4c8970a8455d2c489cc2b1"
+    },
+    "hall": {
+      "$oid": "5e4108a962a34e1e2c647c07"
+    },
+    "row": 1,
+    "column": 1,
+    "_creator": {
+      "$oid": "5e40b9fc0eb9b81850e33cf8"
+    },
+    "_class": "seat",
+    "_createdAt": {
+      "$date": "2020-02-19T01:03:44.760Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5e4cba8b7327c62d9c048d50"
+    },
+    "hall": {
+      "$oid": "5e4108a962a34e1e2c647c07"
+    },
+    "row": 1,
+    "column": 2,
+    "_creator": {
+      "$oid": "5e40b9fc0eb9b81850e33cf8"
+    },
+    "_class": "seat",
+    "_createdAt": {
+      "$date": "2020-02-19T04:33:15.789Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5e4cba937327c62d9c048d51"
+    },
+    "hall": {
+      "$oid": "5e4108a962a34e1e2c647c07"
+    },
+    "row": 1,
+    "column": 3,
+    "_creator": {
+      "$oid": "5e40b9fc0eb9b81850e33cf8"
+    },
+    "_class": "seat",
+    "_createdAt": {
+      "$date": "2020-02-19T04:33:23.908Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5e4cbab37327c62d9c048d53"
+    },
+    "hall": {
+      "$oid": "5e41066762a34e1e2c647c05"
+    },
+    "row": 1,
+    "column": 1,
+    "_creator": {
+      "$oid": "5e40b9fc0eb9b81850e33cf8"
+    },
+    "_class": "seat",
+    "_createdAt": {
+      "$date": "2020-02-19T04:33:55.290Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5e4cbab87327c62d9c048d54"
+    },
+    "hall": {
+      "$oid": "5e41066762a34e1e2c647c05"
+    },
+    "row": 1,
+    "column": 2,
+    "_creator": {
+      "$oid": "5e40b9fc0eb9b81850e33cf8"
+    },
+    "_class": "seat",
+    "_createdAt": {
+      "$date": "2020-02-19T04:34:00.808Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5e4cbabe7327c62d9c048d55"
+    },
+    "hall": {
+      "$oid": "5e41066762a34e1e2c647c05"
+    },
+    "row": 1,
+    "column": 3,
+    "_creator": {
+      "$oid": "5e40b9fc0eb9b81850e33cf8"
+    },
+    "_class": "seat",
+    "_createdAt": {
+      "$date": "2020-02-19T04:34:06.024Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5e4cbaca7327c62d9c048d56"
+    },
+    "hall": {
+      "$oid": "5e41066762a34e1e2c647c05"
+    },
+    "row": 2,
+    "column": 1,
+    "_creator": {
+      "$oid": "5e40b9fc0eb9b81850e33cf8"
+    },
+    "_class": "seat",
+    "_createdAt": {
+      "$date": "2020-02-19T04:34:18.973Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5e4cbad27327c62d9c048d57"
+    },
+    "hall": {
+      "$oid": "5e41066762a34e1e2c647c05"
+    },
+    "row": 2,
+    "column": 2,
+    "_creator": {
+      "$oid": "5e40b9fc0eb9b81850e33cf8"
+    },
+    "_class": "seat",
+    "_createdAt": {
+      "$date": "2020-02-19T04:34:26.988Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5e4cbad87327c62d9c048d58"
+    },
+    "hall": {
+      "$oid": "5e41066762a34e1e2c647c05"
+    },
+    "row": 2,
+    "column": 3,
+    "_creator": {
+      "$oid": "5e40b9fc0eb9b81850e33cf8"
+    },
+    "_class": "seat",
+    "_createdAt": {
+      "$date": "2020-02-19T04:34:32.036Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5e4cbadf7327c62d9c048d59"
+    },
+    "hall": {
+      "$oid": "5e41066762a34e1e2c647c05"
+    },
+    "row": 3,
+    "column": 1,
+    "_creator": {
+      "$oid": "5e40b9fc0eb9b81850e33cf8"
+    },
+    "_class": "seat",
+    "_createdAt": {
+      "$date": "2020-02-19T04:34:39.320Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5e4cbae47327c62d9c048d5a"
+    },
+    "hall": {
+      "$oid": "5e41066762a34e1e2c647c05"
+    },
+    "row": 3,
+    "column": 2,
+    "_creator": {
+      "$oid": "5e40b9fc0eb9b81850e33cf8"
+    },
+    "_class": "seat",
+    "_createdAt": {
+      "$date": "2020-02-19T04:34:44.188Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5e4cbae87327c62d9c048d5b"
+    },
+    "hall": {
+      "$oid": "5e41066762a34e1e2c647c05"
+    },
+    "row": 3,
+    "column": 3,
+    "_creator": {
+      "$oid": "5e40b9fc0eb9b81850e33cf8"
+    },
+    "_class": "seat",
+    "_createdAt": {
+      "$date": "2020-02-19T04:34:48.406Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5e4cbb1c7327c62d9c048d5c"
+    },
+    "hall": {
+      "$oid": "5e41073962a34e1e2c647c06"
+    },
+    "row": 1,
+    "column": 1,
+    "_creator": {
+      "$oid": "5e40b9fc0eb9b81850e33cf8"
+    },
+    "_class": "seat",
+    "_createdAt": {
+      "$date": "2020-02-19T04:35:40.770Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5e4cbb227327c62d9c048d5d"
+    },
+    "hall": {
+      "$oid": "5e41073962a34e1e2c647c06"
+    },
+    "row": 1,
+    "column": 2,
+    "_creator": {
+      "$oid": "5e40b9fc0eb9b81850e33cf8"
+    },
+    "_class": "seat",
+    "_createdAt": {
+      "$date": "2020-02-19T04:35:46.208Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5e4cbb277327c62d9c048d5e"
+    },
+    "hall": {
+      "$oid": "5e41073962a34e1e2c647c06"
+    },
+    "row": 1,
+    "column": 3,
+    "_creator": {
+      "$oid": "5e40b9fc0eb9b81850e33cf8"
+    },
+    "_class": "seat",
+    "_createdAt": {
+      "$date": "2020-02-19T04:35:51.071Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5e5396fbd4354315a497f200"
+    },
+    "hall": {
+      "$oid": "5e41073962a34e1e2c647c06"
+    },
+    "row": 2,
+    "column": 1,
+    "_creator": {
+      "$oid": "5e42760ce541271aa89c52c3"
+    },
+    "_class": "seat",
+    "_createdAt": {
+      "$date": "2020-02-24T09:27:23.849Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5e539702d4354315a497f201"
+    },
+    "hall": {
+      "$oid": "5e41073962a34e1e2c647c06"
+    },
+    "row": 2,
+    "column": 2,
+    "_creator": {
+      "$oid": "5e42760ce541271aa89c52c3"
+    },
+    "_class": "seat",
+    "_createdAt": {
+      "$date": "2020-02-24T09:27:30.523Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5e539709d4354315a497f202"
+    },
+    "hall": {
+      "$oid": "5e41073962a34e1e2c647c06"
+    },
+    "row": 2,
+    "column": 3,
+    "_creator": {
+      "$oid": "5e42760ce541271aa89c52c3"
+    },
+    "_class": "seat",
+    "_createdAt": {
+      "$date": "2020-02-24T09:27:37.101Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5e53970fd4354315a497f203"
+    },
+    "hall": {
+      "$oid": "5e41073962a34e1e2c647c06"
+    },
+    "row": 2,
+    "column": 4,
+    "_creator": {
+      "$oid": "5e42760ce541271aa89c52c3"
+    },
+    "_class": "seat",
+    "_createdAt": {
+      "$date": "2020-02-24T09:27:43.656Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5e539716d4354315a497f204"
+    },
+    "hall": {
+      "$oid": "5e41073962a34e1e2c647c06"
+    },
+    "row": 2,
+    "column": 5,
+    "_creator": {
+      "$oid": "5e42760ce541271aa89c52c3"
+    },
+    "_class": "seat",
+    "_createdAt": {
+      "$date": "2020-02-24T09:27:50.157Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5e539723d4354315a497f205"
+    },
+    "hall": {
+      "$oid": "5e41073962a34e1e2c647c06"
+    },
+    "row": 3,
+    "column": 1,
+    "_creator": {
+      "$oid": "5e42760ce541271aa89c52c3"
+    },
+    "_class": "seat",
+    "_createdAt": {
+      "$date": "2020-02-24T09:28:03.047Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5e539729d4354315a497f206"
+    },
+    "hall": {
+      "$oid": "5e41073962a34e1e2c647c06"
+    },
+    "row": 3,
+    "column": 2,
+    "_creator": {
+      "$oid": "5e42760ce541271aa89c52c3"
+    },
+    "_class": "seat",
+    "_createdAt": {
+      "$date": "2020-02-24T09:28:09.500Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5e53972ed4354315a497f207"
+    },
+    "hall": {
+      "$oid": "5e41073962a34e1e2c647c06"
+    },
+    "row": 3,
+    "column": 3,
+    "_creator": {
+      "$oid": "5e42760ce541271aa89c52c3"
+    },
+    "_class": "seat",
+    "_createdAt": {
+      "$date": "2020-02-24T09:28:14.558Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5e5397b6d4354315a497f20f"
+    },
+    "hall": {
+      "$oid": "5e4108a962a34e1e2c647c07"
+    },
+    "row": 2,
+    "column": 1,
+    "_creator": {
+      "$oid": "5e42760ce541271aa89c52c3"
+    },
+    "_class": "seat",
+    "_createdAt": {
+      "$date": "2020-02-24T09:30:30.159Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5e5397bcd4354315a497f210"
+    },
+    "hall": {
+      "$oid": "5e4108a962a34e1e2c647c07"
+    },
+    "row": 2,
+    "column": 2,
+    "_creator": {
+      "$oid": "5e42760ce541271aa89c52c3"
+    },
+    "_class": "seat",
+    "_createdAt": {
+      "$date": "2020-02-24T09:30:36.312Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5e5397c2d4354315a497f211"
+    },
+    "hall": {
+      "$oid": "5e4108a962a34e1e2c647c07"
+    },
+    "row": 2,
+    "column": 3,
+    "_creator": {
+      "$oid": "5e42760ce541271aa89c52c3"
+    },
+    "_class": "seat",
+    "_createdAt": {
+      "$date": "2020-02-24T09:30:42.631Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5e5397c8d4354315a497f212"
+    },
+    "hall": {
+      "$oid": "5e4108a962a34e1e2c647c07"
+    },
+    "row": 2,
+    "column": 4,
+    "_creator": {
+      "$oid": "5e42760ce541271aa89c52c3"
+    },
+    "_class": "seat",
+    "_createdAt": {
+      "$date": "2020-02-24T09:30:48.936Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5e5397ced4354315a497f213"
+    },
+    "hall": {
+      "$oid": "5e4108a962a34e1e2c647c07"
+    },
+    "row": 2,
+    "column": 5,
+    "_creator": {
+      "$oid": "5e42760ce541271aa89c52c3"
+    },
+    "_class": "seat",
+    "_createdAt": {
+      "$date": "2020-02-24T09:30:54.272Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5e5397dfd4354315a497f214"
+    },
+    "hall": {
+      "$oid": "5e4108a962a34e1e2c647c07"
+    },
+    "row": 3,
+    "column": 1,
+    "_creator": {
+      "$oid": "5e42760ce541271aa89c52c3"
+    },
+    "_class": "seat",
+    "_createdAt": {
+      "$date": "2020-02-24T09:31:11.937Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5e5397e7d4354315a497f215"
+    },
+    "hall": {
+      "$oid": "5e4108a962a34e1e2c647c07"
+    },
+    "row": 3,
+    "column": 2,
+    "_creator": {
+      "$oid": "5e42760ce541271aa89c52c3"
+    },
+    "_class": "seat",
+    "_createdAt": {
+      "$date": "2020-02-24T09:31:19.616Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5e5397ecd4354315a497f216"
+    },
+    "hall": {
+      "$oid": "5e4108a962a34e1e2c647c07"
+    },
+    "row": 3,
+    "column": 3,
+    "_creator": {
+      "$oid": "5e42760ce541271aa89c52c3"
+    },
+    "_class": "seat",
+    "_createdAt": {
+      "$date": "2020-02-24T09:31:24.449Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5e5397f2d4354315a497f217"
+    },
+    "hall": {
+      "$oid": "5e4108a962a34e1e2c647c07"
+    },
+    "row": 3,
+    "column": 4,
+    "_creator": {
+      "$oid": "5e42760ce541271aa89c52c3"
+    },
+    "_class": "seat",
+    "_createdAt": {
+      "$date": "2020-02-24T09:31:30.248Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5e5397f7d4354315a497f218"
+    },
+    "hall": {
+      "$oid": "5e4108a962a34e1e2c647c07"
+    },
+    "row": 3,
+    "column": 5,
+    "_creator": {
+      "$oid": "5e42760ce541271aa89c52c3"
+    },
+    "_class": "seat",
+    "_createdAt": {
+      "$date": "2020-02-24T09:31:35.514Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5e5397fcd4354315a497f219"
+    },
+    "hall": {
+      "$oid": "5e4108a962a34e1e2c647c07"
+    },
+    "row": 3,
+    "column": 6,
+    "_creator": {
+      "$oid": "5e42760ce541271aa89c52c3"
+    },
+    "_class": "seat",
+    "_createdAt": {
+      "$date": "2020-02-24T09:31:40.817Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5e539804d4354315a497f21a"
+    },
+    "hall": {
+      "$oid": "5e4108a962a34e1e2c647c07"
+    },
+    "row": 3,
+    "column": 7,
+    "_creator": {
+      "$oid": "5e42760ce541271aa89c52c3"
+    },
+    "_class": "seat",
+    "_createdAt": {
+      "$date": "2020-02-24T09:31:48.450Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5e539816d4354315a497f21b"
+    },
+    "hall": {
+      "$oid": "5e4108a962a34e1e2c647c07"
+    },
+    "row": 4,
+    "column": 1,
+    "_creator": {
+      "$oid": "5e42760ce541271aa89c52c3"
+    },
+    "_class": "seat",
+    "_createdAt": {
+      "$date": "2020-02-24T09:32:06.734Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5e53981cd4354315a497f21c"
+    },
+    "hall": {
+      "$oid": "5e4108a962a34e1e2c647c07"
+    },
+    "row": 4,
+    "column": 2,
+    "_creator": {
+      "$oid": "5e42760ce541271aa89c52c3"
+    },
+    "_class": "seat",
+    "_createdAt": {
+      "$date": "2020-02-24T09:32:12.167Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5e539822d4354315a497f21d"
+    },
+    "hall": {
+      "$oid": "5e4108a962a34e1e2c647c07"
+    },
+    "row": 4,
+    "column": 3,
+    "_creator": {
+      "$oid": "5e42760ce541271aa89c52c3"
+    },
+    "_class": "seat",
+    "_createdAt": {
+      "$date": "2020-02-24T09:32:18.269Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5e539827d4354315a497f21e"
+    },
+    "hall": {
+      "$oid": "5e4108a962a34e1e2c647c07"
+    },
+    "row": 4,
+    "column": 4,
+    "_creator": {
+      "$oid": "5e42760ce541271aa89c52c3"
+    },
+    "_class": "seat",
+    "_createdAt": {
+      "$date": "2020-02-24T09:32:23.441Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5e53982cd4354315a497f21f"
+    },
+    "hall": {
+      "$oid": "5e4108a962a34e1e2c647c07"
+    },
+    "row": 4,
+    "column": 5,
+    "_creator": {
+      "$oid": "5e42760ce541271aa89c52c3"
+    },
+    "_class": "seat",
+    "_createdAt": {
+      "$date": "2020-02-24T09:32:28.484Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5e539834d4354315a497f220"
+    },
+    "hall": {
+      "$oid": "5e4108a962a34e1e2c647c07"
+    },
+    "row": 4,
+    "column": 6,
+    "_creator": {
+      "$oid": "5e42760ce541271aa89c52c3"
+    },
+    "_class": "seat",
+    "_createdAt": {
+      "$date": "2020-02-24T09:32:36.630Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5e53983ad4354315a497f221"
+    },
+    "hall": {
+      "$oid": "5e4108a962a34e1e2c647c07"
+    },
+    "row": 4,
+    "column": 7,
+    "_creator": {
+      "$oid": "5e42760ce541271aa89c52c3"
+    },
+    "_class": "seat",
+    "_createdAt": {
+      "$date": "2020-02-24T09:32:42.919Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5e539850d4354315a497f222"
+    },
+    "hall": {
+      "$oid": "5e4108a962a34e1e2c647c07"
+    },
+    "row": 5,
+    "column": 1,
+    "_creator": {
+      "$oid": "5e42760ce541271aa89c52c3"
+    },
+    "_class": "seat",
+    "_createdAt": {
+      "$date": "2020-02-24T09:33:04.475Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5e539856d4354315a497f223"
+    },
+    "hall": {
+      "$oid": "5e4108a962a34e1e2c647c07"
+    },
+    "row": 5,
+    "column": 2,
+    "_creator": {
+      "$oid": "5e42760ce541271aa89c52c3"
+    },
+    "_class": "seat",
+    "_createdAt": {
+      "$date": "2020-02-24T09:33:10.241Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5e53985bd4354315a497f224"
+    },
+    "hall": {
+      "$oid": "5e4108a962a34e1e2c647c07"
+    },
+    "row": 5,
+    "column": 3,
+    "_creator": {
+      "$oid": "5e42760ce541271aa89c52c3"
+    },
+    "_class": "seat",
+    "_createdAt": {
+      "$date": "2020-02-24T09:33:15.401Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5e53985fd4354315a497f225"
+    },
+    "hall": {
+      "$oid": "5e4108a962a34e1e2c647c07"
+    },
+    "row": 5,
+    "column": 4,
+    "_creator": {
+      "$oid": "5e42760ce541271aa89c52c3"
+    },
+    "_class": "seat",
+    "_createdAt": {
+      "$date": "2020-02-24T09:33:19.952Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5e539864d4354315a497f226"
+    },
+    "hall": {
+      "$oid": "5e4108a962a34e1e2c647c07"
+    },
+    "row": 5,
+    "column": 5,
+    "_creator": {
+      "$oid": "5e42760ce541271aa89c52c3"
+    },
+    "_class": "seat",
+    "_createdAt": {
+      "$date": "2020-02-24T09:33:24.790Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5e539897d4354315a497f227"
+    },
+    "hall": {
+      "$oid": "5e41073962a34e1e2c647c06"
+    },
+    "row": 4,
+    "column": 1,
+    "_creator": {
+      "$oid": "5e42760ce541271aa89c52c3"
+    },
+    "_class": "seat",
+    "_createdAt": {
+      "$date": "2020-02-24T09:34:15.167Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5e53989cd4354315a497f228"
+    },
+    "hall": {
+      "$oid": "5e41073962a34e1e2c647c06"
+    },
+    "row": 4,
+    "column": 2,
+    "_creator": {
+      "$oid": "5e42760ce541271aa89c52c3"
+    },
+    "_class": "seat",
+    "_createdAt": {
+      "$date": "2020-02-24T09:34:20.895Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5e5398a2d4354315a497f229"
+    },
+    "hall": {
+      "$oid": "5e41073962a34e1e2c647c06"
+    },
+    "row": 4,
+    "column": 3,
+    "_creator": {
+      "$oid": "5e42760ce541271aa89c52c3"
+    },
+    "_class": "seat",
+    "_createdAt": {
+      "$date": "2020-02-24T09:34:26.383Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5e5398a6d4354315a497f22a"
+    },
+    "hall": {
+      "$oid": "5e41073962a34e1e2c647c06"
+    },
+    "row": 4,
+    "column": 4,
+    "_creator": {
+      "$oid": "5e42760ce541271aa89c52c3"
+    },
+    "_class": "seat",
+    "_createdAt": {
+      "$date": "2020-02-24T09:34:30.600Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5e5398abd4354315a497f22b"
+    },
+    "hall": {
+      "$oid": "5e41073962a34e1e2c647c06"
+    },
+    "row": 4,
+    "column": 5,
+    "_creator": {
+      "$oid": "5e42760ce541271aa89c52c3"
+    },
+    "_class": "seat",
+    "_createdAt": {
+      "$date": "2020-02-24T09:34:35.874Z"
+    }
+  }
+]

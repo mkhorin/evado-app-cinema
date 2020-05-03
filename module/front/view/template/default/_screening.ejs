@@ -1,0 +1,128 @@
+
+<div class="page" data-page="screening" data-handler="ScreeningPage">
+
+    <ol class="breadcrumb">
+        <li><a href="#" data-action="schedule">Main</a></li>
+        <li><a href="#" data-action="hall">Hall</a></li>
+        <li data-t="">Screening</li>
+    </ol>
+
+    <div class="screening loadable-container"
+         data-handler="Screening"
+         data-create="<%- _url('/api/base/data/create') %>"
+         data-url="<%- _url('/api/base/data/read') %>">
+
+        <div class="loadable-content"></div>
+        <div class="loader"><i class="fa fa-spinner fa-spin"></i></div>
+
+        <template data-id="item">
+            <div class="head row">
+                <div class="col-sm-3">
+                    <img data-src="<%- _url('/api/base/file/thumbnail') %>?s=small&v=.poster&id={{poster}}"
+                         class="thumbnail img-responsive" alt="{{movie}}">
+                </div>
+                <div class="col-sm-9">
+                    <h1>{{movie}}</h1>
+                    <div class="description">{{description}}</div>
+                    <div class="time">Starts at <time>{{date}}</time></div>
+                    <div class="duration">Duration {{duration}} min.</div>
+                </div>
+            </div>
+            <div class="hall">
+                <h3>{{hall}} Hall Seats</h3>
+                <div class="seats">{{seats}}</div>
+            </div>
+        </template>
+
+        <template data-id="seatRow">
+            <div class="seat-row">{{seats}}</div>
+        </template>
+
+        <template data-id="seat">
+            <div class="seat {{state}}" data-seat="{{_id}}">
+                <span class="sold" data-t="">Sold</span>
+                <span class="free" data-t="">Free</span>
+            </div>
+        </template>
+
+        <template data-id="error">
+            <div class="alert-danger alert">{{text}}</div>
+        </template>
+
+        <div class="buy modal" tabindex="-1" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" data-t="">Buy ticket</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-horizontal form">
+                            <div class="form-group">
+                                <label class="control-label col-sm-3">Movie</label>
+                                <p class="form-control-static col-sm-9" data-id="movie"></p>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label col-sm-3">Seat</label>
+                                <p class="form-control-static col-sm-9" data-id="seat"></p>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label col-sm-3">Price</label>
+                                <p class="form-control-static col-sm-9" data-id="price"></p>
+                            </div>
+                            <div class="alert-danger alert">Something went wrong. Please try again later!</div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <div class="text-center">
+                            <button class="btn btn-warning" data-action="buy" title="Buy" data-t="">Buy</button>
+                            <button class="btn btn-default" data-dismiss="modal" title="Cancel" data-t="">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="ticket modal" tabindex="-1" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span>
+                        </button>
+                        <h4 class="modal-title" data-t="">Ticket</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-horizontal form">
+                            <div class="form-group">
+                                <label class="control-label col-sm-3">Movie</label>
+                                <p class="form-control-static col-sm-9" data-id="movie"></p>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label col-sm-3">Start at</label>
+                                <p class="form-control-static col-sm-9" data-id="date"></p>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label col-sm-3">Hall</label>
+                                <p class="form-control-static col-sm-9" data-id="hall"></p>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label col-sm-3">Seat</label>
+                                <p class="form-control-static col-sm-9" data-id="seat"></p>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label col-sm-3">Ticket</label>
+                                <p class="form-control-static col-sm-9" data-id="ticket"></p>
+                            </div>
+                            <div class="alert-success alert">Your ticket ready! Have a nice watching!</div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <div class="text-center">
+                            <button class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

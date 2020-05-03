@@ -1,0 +1,142 @@
+
+.front-wrapper {
+    background: none !important;
+}
+.front-wrapper .content-wrapper {
+    margin: 0;
+}
+.front-wrapper .main-footer {
+    margin-left: 0;
+}
+
+.pagination > li > a {
+    padding: 6px 12px;
+}
+
+/* LOADABLE */
+
+.loadable-container {
+    position: relative;
+}
+.loadable-container > .loader {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 101;
+}
+.loadable-container.loading > .loader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* PAGE */
+
+.page {
+    display: none;
+    padding: 20px 0 30px;
+}
+.page.active {
+    display: block;
+}
+.page > h3 {
+    color: #888;
+}
+
+/* BREADCRUMB */
+
+
+/* SEARCH FORM */
+
+.search-form {
+    padding: 15px 0;
+    margin: 20px 0;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+/* SCREENING */
+
+.screening-card {
+    margin-bottom: 40px;
+}
+.screening-card time {
+    display: block;
+    padding-bottom: 15px;
+    font-weight: bold;
+    font-size: 15px;
+    border-bottom: 1px dashed #ccc;
+}
+.screening-card h4 {
+    font-size: 16px;
+}
+.screening-item {
+    margin-bottom: 30px;
+}
+.screening-item h3 {
+    margin:10px 0 15px 0;
+}
+.screening-item time {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 16px;
+    font-weight: bold;
+}
+.screening-item .duration {
+    margin-bottom: 20px;
+}
+.screening .head .time {
+    margin-top: 15px;
+    font-size: 16px;
+    font-weight: bold;
+}
+.screening .hall {
+    margin-bottom: 40px;
+}
+.screening .hall h3 {
+    text-align: center;
+    padding: 5px;
+    margin-bottom: 30px;
+    background: #fcf5de;
+    color: #e08e0b;
+}
+
+/* SEATS */
+
+.seats .seat-row {
+    white-space: nowrap;
+    text-align: center;
+    user-select: none;
+}
+.seats .seat {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 60px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    cursor: not-allowed;
+    color: #a00;
+    background: #edc0c0;
+}
+.seats .seat.free {
+    cursor: pointer;
+    color: #0a0;
+    background: #a0f0a0;
+}
+.seats .seat.free:hover {
+    cursor: pointer;
+    color: #040;
+    background: #60f060;
+}
+.seats .seat .free,
+.seats .seat.free .sold {
+    display: none;
+}
+.seats .seat.free .free {
+    display: inline;
+}

@@ -1,0 +1,182 @@
+[
+  {
+    "_id": {
+      "$oid": "5e41008a62a34e1e2c647be5"
+    },
+    "name": "alien.jpg",
+    "mime": "image/jpeg",
+    "size": 52682,
+    "file": "2020-02/5e41008a62a34e1e2c647be4",
+    "createdAt": {
+      "$date": "2020-02-10T07:04:42.961Z"
+    },
+    "creator": {
+      "$oid": "5e40b9fc0eb9b81850e33cf8"
+    },
+    "owner": {
+      "$oid": "5e41009162a34e1e2c647be6"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5e41009862a34e1e2c647be8"
+    },
+    "name": "blade-runner.jpg",
+    "mime": "image/jpeg",
+    "size": 54757,
+    "file": "2020-02/5e41009862a34e1e2c647be7",
+    "createdAt": {
+      "$date": "2020-02-10T07:04:56.601Z"
+    },
+    "creator": {
+      "$oid": "5e40b9fc0eb9b81850e33cf8"
+    },
+    "owner": {
+      "$oid": "5e4100a162a34e1e2c647be9"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5e4101da62a34e1e2c647beb"
+    },
+    "name": "die-hard.jpg",
+    "mime": "image/jpeg",
+    "size": 36550,
+    "file": "2020-02/5e4101da62a34e1e2c647bea",
+    "createdAt": {
+      "$date": "2020-02-10T07:10:18.417Z"
+    },
+    "creator": {
+      "$oid": "5e40b9fc0eb9b81850e33cf8"
+    },
+    "owner": {
+      "$oid": "5e4101e462a34e1e2c647bec"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5e4101f662a34e1e2c647bee"
+    },
+    "name": "fight-club.jpg",
+    "mime": "image/jpeg",
+    "size": 46584,
+    "file": "2020-02/5e4101f662a34e1e2c647bed",
+    "createdAt": {
+      "$date": "2020-02-10T07:10:46.886Z"
+    },
+    "creator": {
+      "$oid": "5e40b9fc0eb9b81850e33cf8"
+    },
+    "owner": {
+      "$oid": "5e4101fe62a34e1e2c647bef"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5e41022d62a34e1e2c647bf1"
+    },
+    "name": "gladiator.jpg",
+    "mime": "image/jpeg",
+    "size": 45349,
+    "file": "2020-02/5e41022d62a34e1e2c647bf0",
+    "createdAt": {
+      "$date": "2020-02-10T07:11:41.549Z"
+    },
+    "creator": {
+      "$oid": "5e40b9fc0eb9b81850e33cf8"
+    },
+    "owner": {
+      "$oid": "5e41024d62a34e1e2c647bf2"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5e41026362a34e1e2c647bf4"
+    },
+    "name": "inception.jpg",
+    "mime": "image/jpeg",
+    "size": 87413,
+    "file": "2020-02/5e41026362a34e1e2c647bf3",
+    "createdAt": {
+      "$date": "2020-02-10T07:12:35.630Z"
+    },
+    "creator": {
+      "$oid": "5e40b9fc0eb9b81850e33cf8"
+    },
+    "owner": {
+      "$oid": "5e41026b62a34e1e2c647bf5"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5e41027b62a34e1e2c647bf7"
+    },
+    "name": "jurassic-park.jpg",
+    "mime": "image/jpeg",
+    "size": 87192,
+    "file": "2020-02/5e41027b62a34e1e2c647bf6",
+    "createdAt": {
+      "$date": "2020-02-10T07:12:59.404Z"
+    },
+    "creator": {
+      "$oid": "5e40b9fc0eb9b81850e33cf8"
+    },
+    "owner": {
+      "$oid": "5e41028762a34e1e2c647bf8"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5e41029662a34e1e2c647bfa"
+    },
+    "name": "mattrix.jpg",
+    "mime": "image/jpeg",
+    "size": 134721,
+    "file": "2020-02/5e41029662a34e1e2c647bf9",
+    "createdAt": {
+      "$date": "2020-02-10T07:13:26.318Z"
+    },
+    "creator": {
+      "$oid": "5e40b9fc0eb9b81850e33cf8"
+    },
+    "owner": {
+      "$oid": "5e41029d62a34e1e2c647bfb"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5e4102a962a34e1e2c647bfd"
+    },
+    "name": "pulp-fiction.jpg",
+    "mime": "image/jpeg",
+    "size": 45596,
+    "file": "2020-02/5e4102a962a34e1e2c647bfc",
+    "createdAt": {
+      "$date": "2020-02-10T07:13:45.968Z"
+    },
+    "creator": {
+      "$oid": "5e40b9fc0eb9b81850e33cf8"
+    },
+    "owner": {
+      "$oid": "5e4102b262a34e1e2c647bfe"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5e4102b762a34e1e2c647c00"
+    },
+    "name": "seven.jpg",
+    "mime": "image/jpeg",
+    "size": 64619,
+    "file": "2020-02/5e4102b762a34e1e2c647bff",
+    "createdAt": {
+      "$date": "2020-02-10T07:13:59.477Z"
+    },
+    "creator": {
+      "$oid": "5e40b9fc0eb9b81850e33cf8"
+    },
+    "owner": {
+      "$oid": "5e4102bd62a34e1e2c647c01"
+    }
+  }
+]
