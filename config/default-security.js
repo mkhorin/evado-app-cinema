@@ -6,29 +6,29 @@ module.exports = {
 
     metaPermissions: [{
         description: 'Full access to data',
+        roles: 'administrator',
         type: 'allow',
-        roles: ['administrator'],
-        actions: ['all'],
-        targets: [{type: 'all'}]
+        actions: 'all',
+        targets: {type: 'all'}
     }, {
         description: 'Guest user access to read public data',
+        roles: 'guest',
         type: 'allow',
-        roles: ['guest'],
-        actions: ['read'],
-        targets: [{
+        actions: 'read',
+        targets: {
             type: 'class',
             class: ['hall', 'movie', 'poster', 'screening', 'seat', 'pricing', 'ticket']
-        }]
+        }
     }, {
         description: 'Guest user access to create ticket',
+        roles: 'guest',
         type: 'allow',
-        roles: ['guest'],
-        actions: ['create'],
-        targets: [{
+        actions: 'create',
+        targets: {
             type: 'view',
             class: 'ticket',
             view: 'publicCreate'
-        }]
+        }
     }],
 
     permissions: {
@@ -55,8 +55,7 @@ module.exports = {
             children: [
                 'moduleAdmin',
                 'moduleOffice',
-                'moduleStudio',
-                'upload'
+                'moduleStudio'
             ]
         },
         'guest': {
@@ -65,12 +64,12 @@ module.exports = {
         },
         'user': {
             label: 'User',
-            description: 'Default role for new user'
+            description: 'Default role for new registered user'
         }
     },
 
     assignments: {
-        'Adam': ['administrator']
+        'Adam': 'administrator'
     },
 
     rules: {

@@ -20,6 +20,10 @@ Cinema.Page = class Page extends Cinema.Element {
     setText (key, text) {
         return this.find(`[data-text="${key}"]`).html(text);
     }
+
+    showPage () {
+        this.cinema.showPage(this.name, ...arguments);
+    }
 };
 
 Cinema.SchedulePage = class SchedulePage extends Cinema.Page {
@@ -49,7 +53,7 @@ Cinema.HallPage = class HallPage extends Cinema.Page {
         this.list.hall = hall;
         this.setText('hall', $hall.data('name'));
         this.setText('description', $hall.data('description'));
-        this.cinema.showPage(this.name);
+        this.showPage();
     }
 };
 
@@ -72,7 +76,7 @@ Cinema.ScreeningPage = class ScreeningPage extends Cinema.Page {
 
     onScreening (event, {screening}) {
         this.screening.screening = screening;
-        this.cinema.showPage(this.name);
+        this.showPage();
     }
 
     setBreadcrumb () {
