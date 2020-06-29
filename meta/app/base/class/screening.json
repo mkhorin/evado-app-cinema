@@ -191,8 +191,8 @@
       "commonSearchable": false,
       "eagerLoading": false,
       "escape": true,
-      "finder": {
-        "Class": "component/meta/relation/FreeSeatsFinder"
+      "filter": {
+        "Class": "component/meta/relation/FreeSeatsFilter"
       },
       "group": "freeSeats",
       "hidden": false,

@@ -3,11 +3,11 @@
  */
 'use strict';
 
-const Base = require('evado-meta-base/attr/RelationFinder');
+const Base = require('evado-meta-base/filter/RelationFilter');
 
-module.exports = class FreeSeatsFinder extends Base {
+module.exports = class FreeSeatsFilter extends Base {
 
-    async execute (query, model) {
+    async apply (query, model) {
         const hall = model.get('hall');
         const screening = model.getId();
         const ticket = model.class.meta.getClass('ticket');

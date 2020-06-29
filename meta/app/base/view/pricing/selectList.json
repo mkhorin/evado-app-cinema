@@ -1,10 +1,7 @@
 {
   "label": "Select list",
   "filter": {
-    "hall": [
-      "$dep",
-      "hall"
-    ]
+    "hall": "$dependency.hall"
   },
   "attrs": [
     {

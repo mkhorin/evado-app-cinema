@@ -1,10 +1,7 @@
 {
   "label": "Select from price",
   "filter": {
-    "hall": [
-      "$dep",
-      "pricing.hall"
-    ]
+    "hall": "$dep.pricing.hall"
   },
   "attrs": [
     {

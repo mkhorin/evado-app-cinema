@@ -7,7 +7,7 @@ const Base = require('areto/base/Base');
 
 module.exports = class TestQueryFilter extends Base {
 
-    resolve (query) {
+    apply (query) {
         return query.and({'someAttr': 'someValue'});
     }
 };

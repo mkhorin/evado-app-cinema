@@ -3,18 +3,12 @@
   "filter": [
     "AND",
     {
-      "hall": [
-        "$dep",
-        "screening.hall"
-      ]
+      "hall": "$dependency.screening.hall"
     },
     [
       "NOT IN",
       "$key",
-      [
-        "$dep",
-        "screening.tickets.seat.$key"
-      ]
+      "$dependency.screening.tickets.seat.$key"
     ]
   ],
   "attrs": [
