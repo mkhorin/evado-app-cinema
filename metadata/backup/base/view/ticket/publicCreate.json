@@ -1,0 +1,18 @@
+{
+  "label": "Public create",
+  "description": "Create ticket by front guest users",
+  "attrs": [
+    {
+      "name": "screening",
+      "orderNumber": 10
+    },
+    {
+      "name": "seat",
+      "orderNumber": 30
+    },
+    {
+      "name": "price",
+      "orderNumber": 40
+    }
+  ]
+}

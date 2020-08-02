@@ -1,0 +1,19 @@
+{
+  "label": "Ticket creation",
+  "attrs": [
+    {
+      "name": "screening",
+      "orderNumber": 10,
+      "readOnly": true
+    },
+    {
+      "name": "seat",
+      "orderNumber": 30,
+      "selectListView": "selectFromTicket"
+    },
+    {
+      "name": "price",
+      "orderNumber": 40
+    }
+  ]
+}

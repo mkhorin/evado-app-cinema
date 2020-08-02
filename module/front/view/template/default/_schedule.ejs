@@ -18,9 +18,6 @@
          data-handler="ScheduleScreeningList"
          data-url="<%- _url('/api/base/data/list') %>">
 
-        <div class="loadable-content"></div>
-        <div class="loader"><i class="fa fa-spinner fa-spin"></i></div>
-
         <template data-id="list">
             <div class="row">{{items}}</div>
         </template>
@@ -29,7 +26,7 @@
             <div class="col-sm-6 col-lg-4">
                 <div class="screening-card" data-screening="{{_id}}">
                     <a href="#" data-action="screening">
-                        <img data-src="<%- _url('/api/base/file/thumbnail') %>?s=small&v=.poster&id={{poster}}"
+                        <img data-src="<%- _url('/api/base/file/thumbnail') %>?s=small&c=poster&id={{poster}}"
                              class="thumbnail img-responsive" alt="{{movie}}">
                     </a>
                     <h3><a href="#" data-action="screening">{{movie}}</a></h3>
@@ -49,5 +46,8 @@
         </template>
 
         <%- include('./_pagination') %>
+
+        <div class="loadable-content"></div>
+        <div class="loader"><i class="fa fa-spinner fa-spin"></i></div>
     </div>
 </div>

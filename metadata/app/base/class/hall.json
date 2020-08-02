@@ -51,10 +51,8 @@
       "eagerLoading": false,
       "escape": true,
       "expression": [
-        "$query",
-        "count",
+        "$count",
         "seat",
-        null,
         {
           "hall": ".$key"
         }

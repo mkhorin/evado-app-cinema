@@ -1,0 +1,16 @@
+{
+  "label": "Select from price",
+  "filter": {
+    "hall": "$dependency.pricing.hall"
+  },
+  "attrs": [
+    {
+      "name": "row",
+      "orderNumber": 10
+    },
+    {
+      "name": "column",
+      "orderNumber": 20
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "label": "In hall",
+  "description": "Seats in hall",
+  "attrs": [
+    {
+      "name": "row",
+      "orderNumber": 20
+    },
+    {
+      "name": "column",
+      "orderNumber": 30
+    }
+  ]
+}

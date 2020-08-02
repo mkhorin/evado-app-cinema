@@ -12,13 +12,10 @@
          data-create="<%- _url('/api/base/data/create') %>"
          data-url="<%- _url('/api/base/data/read') %>">
 
-        <div class="loadable-content"></div>
-        <div class="loader"><i class="fa fa-spinner fa-spin"></i></div>
-
         <template data-id="item">
             <div class="head row">
                 <div class="col-sm-3">
-                    <img data-src="<%- _url('/api/base/file/thumbnail') %>?s=small&v=.poster&id={{poster}}"
+                    <img data-src="<%- _url('/api/base/file/thumbnail') %>?s=small&c=poster&id={{poster}}"
                          class="thumbnail img-responsive" alt="{{movie}}">
                 </div>
                 <div class="col-sm-9">
@@ -48,6 +45,9 @@
         <template data-id="error">
             <div class="alert-danger alert">{{text}}</div>
         </template>
+
+        <div class="loadable-content"></div>
+        <div class="loader"><i class="fa fa-spinner fa-spin"></i></div>
 
         <div class="buy modal" tabindex="-1" role="dialog">
             <div class="modal-dialog">

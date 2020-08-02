@@ -1,0 +1,189 @@
+{
+  "abstract": false,
+  "description": "Permanent film properties",
+  "header": ".title",
+  "label": "Movie",
+  "attrs": [
+    {
+      "name": "title",
+      "label": "Title",
+      "type": "string",
+      "commonSearchable": true,
+      "eagerLoading": false,
+      "escape": true,
+      "hidden": false,
+      "history": false,
+      "multiple": false,
+      "orderNumber": 10,
+      "sortable": true,
+      "sortableRelation": false,
+      "readOnly": false,
+      "required": true,
+      "selectSearchable": true,
+      "trim": true,
+      "unique": true
+    },
+    {
+      "name": "description",
+      "label": "Description",
+      "type": "text",
+      "commonSearchable": true,
+      "eagerLoading": false,
+      "escape": true,
+      "group": "main",
+      "hidden": false,
+      "history": false,
+      "multiple": false,
+      "orderNumber": 20,
+      "sortable": false,
+      "sortableRelation": false,
+      "readOnly": false,
+      "required": false,
+      "selectSearchable": false,
+      "trim": true,
+      "unique": false
+    },
+    {
+      "name": "duration",
+      "label": "Duration",
+      "type": "integer",
+      "description": "Movie duration",
+      "commonSearchable": false,
+      "eagerLoading": false,
+      "escape": true,
+      "group": "main",
+      "hidden": false,
+      "hint": "In minutes",
+      "history": false,
+      "multiple": false,
+      "orderNumber": 30,
+      "sortable": false,
+      "sortableRelation": false,
+      "readOnly": false,
+      "required": true,
+      "selectSearchable": false,
+      "trim": true,
+      "unique": false
+    },
+    {
+      "name": "poster",
+      "label": "Poster",
+      "type": "ref",
+      "commands": [
+        "add",
+        "remove",
+        "edit"
+      ],
+      "commonSearchable": false,
+      "eagerLoading": false,
+      "escape": true,
+      "group": "main",
+      "hidden": false,
+      "history": false,
+      "multiple": false,
+      "orderNumber": 40,
+      "sortable": false,
+      "sortableRelation": false,
+      "refClass": "poster",
+      "readOnly": false,
+      "required": false,
+      "selectSearchable": false,
+      "trim": true,
+      "unique": false
+    },
+    {
+      "name": "screenings",
+      "label": "Screenings",
+      "type": "backref",
+      "commands": [
+        "create",
+        "edit"
+      ],
+      "commonSearchable": false,
+      "eagerLoading": false,
+      "escape": true,
+      "group": "screenings",
+      "hidden": false,
+      "history": false,
+      "multiple": true,
+      "options": {
+        "css": "no-label"
+      },
+      "orderNumber": 50,
+      "sortable": false,
+      "sortableRelation": false,
+      "refAttr": "movie",
+      "refClass": "screening",
+      "readOnly": true,
+      "required": false,
+      "selectSearchable": false,
+      "trim": true,
+      "unique": false
+    },
+    {
+      "name": "tickets",
+      "label": "Tickets",
+      "type": "backref",
+      "commands": [
+        "add",
+        "remove",
+        "create",
+        "edit"
+      ],
+      "commonSearchable": false,
+      "eagerLoading": false,
+      "escape": true,
+      "group": "tickets",
+      "hidden": false,
+      "history": false,
+      "multiple": true,
+      "options": {
+        "css": "no-label",
+        "relation": {
+          "showTop": true
+        }
+      },
+      "orderNumber": 60,
+      "sortable": false,
+      "sortableRelation": false,
+      "refAttr": "screening",
+      "refClass": "ticket",
+      "readOnly": true,
+      "required": false,
+      "selectSearchable": false,
+      "trim": true,
+      "unique": false,
+      "via": {
+        "refClass": "screening",
+        "refAttr": "movie"
+      }
+    }
+  ],
+  "groups": [
+    {
+      "name": "tabs",
+      "label": "Tabs",
+      "orderNumber": 1000,
+      "type": "tabs"
+    },
+    {
+      "active": true,
+      "name": "main",
+      "label": "Main",
+      "orderNumber": 1010,
+      "parent": "tabs"
+    },
+    {
+      "name": "screenings",
+      "label": "Screenings",
+      "orderNumber": 1020,
+      "parent": "tabs"
+    },
+    {
+      "name": "tickets",
+      "label": "Tickets",
+      "orderNumber": 1030,
+      "parent": "tabs"
+    }
+  ]
+}

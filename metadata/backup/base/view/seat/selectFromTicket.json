@@ -1,0 +1,24 @@
+{
+  "label": "Select from ticket",
+  "filter": [
+    "AND",
+    {
+      "hall": "$dependency.screening.hall"
+    },
+    [
+      "NOT IN",
+      "$key",
+      "$dependency.screening.tickets.seat.$key"
+    ]
+  ],
+  "attrs": [
+    {
+      "name": "row",
+      "orderNumber": 10
+    },
+    {
+      "name": "column",
+      "orderNumber": 20
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "label": "In screening",
+  "description": "Screening ticket list",
+  "attrs": [
+    {
+      "name": "seat",
+      "orderNumber": 30
+    },
+    {
+      "name": "price",
+      "orderNumber": 40
+    }
+  ]
+}

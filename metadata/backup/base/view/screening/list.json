@@ -1,0 +1,22 @@
+{
+  "label": "List",
+  "description": "Default list",
+  "attrs": [
+    {
+      "name": "active",
+      "orderNumber": 10
+    },
+    {
+      "name": "date",
+      "orderNumber": 30
+    },
+    {
+      "name": "movie",
+      "orderNumber": 40
+    },
+    {
+      "name": "hall",
+      "orderNumber": 50
+    }
+  ]
+}

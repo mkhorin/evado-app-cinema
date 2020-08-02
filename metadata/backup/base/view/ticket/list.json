@@ -1,0 +1,23 @@
+{
+  "label": "List",
+  "description": "Default list",
+  "attrs": [
+    {
+      "name": "screening",
+      "orderNumber": 10
+    },
+    {
+      "name": "seat",
+      "eagerLoading": true,
+      "orderNumber": 30
+    },
+    {
+      "name": "price",
+      "orderNumber": 40
+    },
+    {
+      "name": "_createdAt",
+      "orderNumber": 50
+    }
+  ]
+}

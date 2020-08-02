@@ -1,0 +1,61 @@
+{
+  "abstract": false,
+  "description": "Movie poster",
+  "header": ".title",
+  "label": "Poster",
+  "options": {
+    "thumbnail": "tiny"
+  },
+  "attrs": [
+    {
+      "name": "title",
+      "label": "Title",
+      "type": "string",
+      "commonSearchable": true,
+      "eagerLoading": false,
+      "escape": true,
+      "hidden": false,
+      "history": false,
+      "multiple": false,
+      "orderNumber": 10,
+      "sortable": false,
+      "sortableRelation": false,
+      "readOnly": false,
+      "required": true,
+      "selectSearchable": true,
+      "trim": true,
+      "unique": true
+    },
+    {
+      "name": "file",
+      "label": "Image",
+      "type": "file",
+      "commonSearchable": false,
+      "eagerLoading": false,
+      "escape": true,
+      "hidden": false,
+      "history": false,
+      "multiple": false,
+      "options": {
+        "thumbnail": "small"
+      },
+      "orderNumber": 20,
+      "sortable": false,
+      "sortableRelation": false,
+      "readOnly": false,
+      "required": true,
+      "selectSearchable": false,
+      "trim": true,
+      "unique": false
+    }
+  ],
+  "behaviors": [
+    {
+      "type": "file",
+      "orderNumber": 10,
+      "imageOnly": true,
+      "nameAttr": "title",
+      "accept": "image/*"
+    }
+  ]
+}

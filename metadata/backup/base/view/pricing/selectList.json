@@ -1,0 +1,16 @@
+{
+  "label": "Select list",
+  "filter": {
+    "hall": "$dependency.hall"
+  },
+  "attrs": [
+    {
+      "name": "name",
+      "orderNumber": 20
+    },
+    {
+      "name": "value",
+      "orderNumber": 30
+    }
+  ]
+}
