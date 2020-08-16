@@ -45,6 +45,9 @@ module.exports = {
         'moduleStudio': {
             label: 'Studio module',
             description: 'Access to Studio module'
+        },
+        'moduleApiBaseUpload': {
+            label: 'Upload files'
         }
     },
 
@@ -55,7 +58,8 @@ module.exports = {
             children: [
                 'moduleAdmin',
                 'moduleOffice',
-                'moduleStudio'
+                'moduleStudio',
+                'moduleApiBaseUpload'
             ]
         },
         'guest': {
@@ -64,14 +68,14 @@ module.exports = {
         },
         'user': {
             label: 'User',
-            description: 'Default role for new registered users'
+            description: 'Default role for authenticated users'
         }
+    },
+
+    rules: {
     },
 
     assignments: {
         'Adam': 'administrator'
-    },
-
-    rules: {
     }
 };
