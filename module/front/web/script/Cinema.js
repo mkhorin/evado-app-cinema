@@ -260,6 +260,7 @@ Cinema.LoadableContent = class LoadableContent extends Cinema.Element {
     onDone (data) {
         this.toggleLoading(false);
         this.$content.html(this.render(data));
+        this.translateContainer();
         Jam.Helper.executeSerialImageLoading($(this.container));
     }
 

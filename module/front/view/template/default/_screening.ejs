@@ -2,8 +2,8 @@
 <div class="page" data-page="screening" data-handler="ScreeningPage">
 
     <ol class="breadcrumb">
-        <li><a href="#" data-action="schedule">Main</a></li>
-        <li><a href="#" data-action="hall">Hall</a></li>
+        <li><a href="#" data-action="schedule" data-t="">Main</a></li>
+        <li><a href="#" data-action="hall" data-t="">Hall</a></li>
         <li data-t="">Screening</li>
     </ol>
 
@@ -21,12 +21,17 @@
                 <div class="col-sm-9">
                     <h1>{{movie}}</h1>
                     <div class="description">{{description}}</div>
-                    <div class="time">Starts at <time>{{date}}</time></div>
-                    <div class="duration">Duration {{duration}} min.</div>
+                    <div class="time">
+                        <span data-t="">Starts at</span>
+                        <time>{{date}}</time>
+                    </div>
+                    <div class="duration">
+                        <span data-t="">Duration</span> {{duration}} min.
+                    </div>
                 </div>
             </div>
             <div class="hall">
-                <h3>{{hall}} Hall Seats</h3>
+                <h3>{{hall}} hall seats</h3>
                 <div class="seats">{{seats}}</div>
             </div>
         </template>
@@ -59,15 +64,15 @@
                     <div class="modal-body">
                         <div class="form-horizontal form">
                             <div class="form-group">
-                                <label class="control-label col-sm-3">Movie</label>
+                                <label class="control-label col-sm-3" data-t="">Movie</label>
                                 <p class="form-control-static col-sm-9" data-id="movie"></p>
                             </div>
                             <div class="form-group">
-                                <label class="control-label col-sm-3">Seat</label>
+                                <label class="control-label col-sm-3" data-t="">Seat</label>
                                 <p class="form-control-static col-sm-9" data-id="seat"></p>
                             </div>
                             <div class="form-group">
-                                <label class="control-label col-sm-3">Price</label>
+                                <label class="control-label col-sm-3" data-t="">Price</label>
                                 <p class="form-control-static col-sm-9" data-id="price"></p>
                             </div>
                             <div class="alert-danger alert">Something went wrong. Please try again later!</div>
@@ -94,26 +99,26 @@
                     <div class="modal-body">
                         <div class="form-horizontal form">
                             <div class="form-group">
-                                <label class="control-label col-sm-3">Movie</label>
+                                <label class="control-label col-sm-3" data-t="">Movie</label>
                                 <p class="form-control-static col-sm-9" data-id="movie"></p>
                             </div>
                             <div class="form-group">
-                                <label class="control-label col-sm-3">Start at</label>
+                                <label class="control-label col-sm-3" data-t="">Start at</label>
                                 <p class="form-control-static col-sm-9" data-id="date"></p>
                             </div>
                             <div class="form-group">
-                                <label class="control-label col-sm-3">Hall</label>
+                                <label class="control-label col-sm-3" data-t="">Hall</label>
                                 <p class="form-control-static col-sm-9" data-id="hall"></p>
                             </div>
                             <div class="form-group">
-                                <label class="control-label col-sm-3">Seat</label>
+                                <label class="control-label col-sm-3" data-t="">Seat</label>
                                 <p class="form-control-static col-sm-9" data-id="seat"></p>
                             </div>
                             <div class="form-group">
-                                <label class="control-label col-sm-3">Ticket</label>
+                                <label class="control-label col-sm-3" data-t="">Ticket</label>
                                 <p class="form-control-static col-sm-9" data-id="ticket"></p>
                             </div>
-                            <div class="alert-success alert">Your ticket ready! Have a nice watching!</div>
+                            <div class="alert-success alert" data-t="">Your ticket ready! Have a nice watching!</div>
                         </div>
                     </div>
                     <div class="modal-footer">

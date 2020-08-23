@@ -8,9 +8,15 @@
 .front-wrapper .main-footer {
     margin-left: 0;
 }
-
 .pagination > li > a {
     padding: 6px 12px;
+}
+.signboard {
+    padding: 20px;
+    margin-top: 20px;
+    color: #884;
+    background: #ffe;
+    border-bottom: 2px solid #cca;
 }
 
 /* LOADABLE */
@@ -45,9 +51,6 @@
 .page > h3 {
     color: #888;
 }
-
-/* BREADCRUMB */
-
 
 /* SEARCH FORM */
 
