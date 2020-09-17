@@ -11,7 +11,7 @@ module.exports = class FreeSeatsFilter extends Base {
         const hall = model.get('hall');
         const screening = model.getId();
         const ticket = model.class.meta.getClass('ticket');
-        const seats = await ticket.find().and({screening}).column('seat');
+        const seats = await ticket.find({screening}).column('seat');
         query.and({hall}); // only hall seats
         query.and(['NOT IN', query.view.getKey(), seats]); // not in ticket seats
         return query;
