@@ -1,9 +1,7 @@
-# Evado Cinema App
+# Evado Cinema
 
-Multi-hall movie theater management application
-
-- [Evado Declarative Framework](https://github.com/mkhorin/evado)
-- [Step-by-step tutorial](http://nervebit.com)
+Multi-hall movie theater management application 
+built on [Evado Declarative Framework](https://github.com/mkhorin/evado). 
 
 ## Docker installation
 
@@ -51,4 +49,4 @@ Password: 123456
 ```
 
 ## Tutorial
-- [Build App Without Coding](http://nervebit.com)
+- [Build an App Without Coding](http://nervebit.com)
