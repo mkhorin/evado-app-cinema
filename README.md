@@ -1,6 +1,6 @@
 # Evado Cinema
 
-Multi-hall movie theater management application 
+A multi-hall movie theater management application 
 built on [Evado Declarative Framework](https://github.com/mkhorin/evado). 
 
 ## Docker installation
