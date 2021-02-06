@@ -2,8 +2,8 @@
 <div class="page" data-page="hall" data-handler="HallPage">
 
     <ol class="breadcrumb">
-        <li><a href="#" data-t="" data-action="schedule">Main</a></li>
-        <li data-t="">Hall</li>
+        <li class="breadcrumb-item"><a href="#" data-t="" data-action="schedule">Main</a></li>
+        <li class="breadcrumb-item" data-t="">Hall</li>
     </ol>
 
     <h1><span data-text="hall"></span> Hall</h1>
@@ -14,7 +14,7 @@
             <input type="search" class="form-control" placeholder="Search for...">
             <span class="input-group-btn">
                 <button class="btn btn-primary" type="submit">
-                    <span class="glyphicon glyphicon-search"></span>
+                    <i class="fas fa-search"></i>
                 </button>
             </span>
         </div>
@@ -32,11 +32,11 @@
             <div class="col-md-6">
                 <div class="screening-item" data-screening="{{_id}}">
                     <div class="row">
-                        <div class="col-xs-6">
+                        <div class="col-6">
                             <img data-src="<%- _url('/api/base/file/thumbnail') %>?s=small&c=poster&id={{poster}}"
-                                 class="thumbnail img-responsive" alt="{{movie}}">
+                                 class="img-thumbnail img-fluid" alt="{{movie}}">
                         </div>
-                        <div class="col-xs-6">
+                        <div class="col-6">
                             <h3>{{movie}}</h3>
                             <time>{{date}}</time>
                             <div class="duration">

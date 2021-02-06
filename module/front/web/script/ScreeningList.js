@@ -1,6 +1,6 @@
 'use strict';
 
-Cinema.ScreeningList = class ScreeningList extends Cinema.LoadableContent {
+Cinema.ScreeningList = class ScreeningList extends Cinema.Loadable {
 
     init () {
         super.init();
@@ -44,20 +44,20 @@ Cinema.ScreeningList = class ScreeningList extends Cinema.LoadableContent {
     }
 
     render (data) {
-        let items = data && data.items;
+        let items = data?.items;
         items = Array.isArray(items) ? items : [];
         items = items.map(this.renderItem, this).join('');
         return items
             ? this.resolveTemplate('list', {items})
-            : this.resolveTemplate('error', {text: Jam.i18n.translate('No movie screenings')});
+            : this.resolveTemplate('error', {text: Jam.t('No movie screenings')});
     }
 
     renderItem (data) {
         const movie = data.movie || {};
         const hall = data.hall || {};
-        data.movie = Jam.Helper.escapeTags(movie._title);
+        data.movie = Jam.escape(movie._title);
         data.hall = hall._id;
-        data.hallName = Jam.Helper.escapeTags(hall._title);
+        data.hallName = Jam.escape(hall._title);
         data.hallDescription = hall.description;
         data.date = data.date ? moment(data.date).format('LT L') : '';
         data.poster = movie.poster;
@@ -76,9 +76,9 @@ Cinema.ScreeningList = class ScreeningList extends Cinema.LoadableContent {
 
     onDone (data) {
         super.onDone(data);
-        this.pagination.setTotal(data && data.totalSize);
+        this.pagination.setTotal(data?.totalSize);
         this.$content.append(this.pagination.render());
-        this.translateContainer();
+        Jam.t(this.$container);
         $(window).scrollTop(0);
     }
 };

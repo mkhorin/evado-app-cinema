@@ -1,4 +1,8 @@
-
+body {
+    --navbar-color: var(--light-warning);
+    --super-navbar-color: var(--dark-warning);
+    --sidebar-width: 0;
+}
 .front-wrapper {
     background: none !important;
 }
@@ -10,13 +14,6 @@
 }
 .pagination > li > a {
     padding: 6px 12px;
-}
-.signboard {
-    padding: 20px;
-    margin-top: 20px;
-    color: #884;
-    background: #ffe;
-    border-bottom: 2px solid #cca;
 }
 
 /* LOADABLE */
@@ -43,13 +40,18 @@
 
 .page {
     display: none;
-    padding: 20px 0 30px;
 }
 .page.active {
     display: block;
 }
 .page > h3 {
     color: #888;
+}
+
+/* BREADCRUMB */
+
+.breadcrumb {
+    background: #eff;
 }
 
 /* SEARCH FORM */
@@ -68,13 +70,16 @@
 }
 .screening-card time {
     display: block;
-    padding-bottom: 15px;
-    font-weight: bold;
-    font-size: 15px;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    font-weight: 500;
     border-bottom: 1px dashed #ccc;
 }
+.screening-card h3 {
+    margin: 1rem 0;
+}
 .screening-card h4 {
-    font-size: 16px;
+    font-size: 1.1rem;
 }
 .screening-item {
     margin-bottom: 30px;
@@ -84,9 +89,8 @@
 }
 .screening-item time {
     display: block;
-    margin-bottom: 5px;
-    font-size: 16px;
-    font-weight: bold;
+    margin-bottom: 1rem;
+    font-weight: 500;
 }
 .screening-item .duration {
     margin-bottom: 20px;
@@ -101,10 +105,11 @@
 }
 .screening .hall h3 {
     text-align: center;
-    padding: 5px;
-    margin-bottom: 30px;
-    background: #fcf5de;
+    padding: .5rem;
+    margin: 2rem 0;
+    background: #dfa;
     color: #e08e0b;
+    font-size: 1.5rem;
 }
 
 /* SEATS */

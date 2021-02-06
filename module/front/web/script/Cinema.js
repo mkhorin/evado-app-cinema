@@ -3,7 +3,7 @@
 class Cinema {
 
     static getElementClass (name) {
-        return Cinema[name] && Cinema[name].prototype instanceof Cinema.Element ? Cinema[name] : null;
+        return Cinema[name]?.prototype instanceof Cinema.Element ? Cinema[name] : null;
     }
 
     static toggle ($element, state) {
@@ -11,12 +11,7 @@ class Cinema {
     }
 
     static getTemplate (name, container) {
-        const template = container.querySelector(`template[data-id="${name}"]`);
-        if (template) {
-            return template.innerHTML;
-        }
-        console.error(`Template not found: ${name}`);
-        return '';
+        return container.querySelector(`template[data-id="${name}"]`)?.innerHTML;
     }
 
     static resolveTemplate (text, data) {
@@ -26,8 +21,7 @@ class Cinema {
     static setPageTitle (text) {
         const $title = $(document.head).find('title');
         const base = $title.data('title');
-        text = Jam.i18n.translate(text);
-        $title.html(text ? `${text} - ${base}` : base);
+        $title.html(text ? `${Jam.t(text)} - ${base}` : base);
     }
 
     static escapeData (data, keys) {
@@ -160,10 +154,6 @@ Cinema.Element = class Element {
     trigger () {
         this.$container.trigger(...arguments);
     }
-
-    translateContainer () {
-        Jam.i18n.translateContainer(this.$container, ...arguments);
-    }
 };
 
 Cinema.AjaxQueue = class AjaxQueue {
@@ -199,7 +189,7 @@ Cinema.AjaxQueue = class AjaxQueue {
             return false;
         }
         const {deferred, args} = this._tasks.splice(0, 1)[0];
-        const csrf = Jam.Helper.getCsrfToken();
+        const csrf = Jam.getCsrfToken();
         const data = {csrf, ...args[1]};
         const params = {
             method: 'post',
@@ -220,14 +210,12 @@ Cinema.AjaxQueue = class AjaxQueue {
     }
 
     abort () {
-        if (this._xhr) {
-            this._xhr.abort();
-            this._xhr = null;
-        }
+        this._xhr?.abort();
+        this._xhr = null;
     }
 };
 
-Cinema.LoadableContent = class LoadableContent extends Cinema.Element {
+Cinema.Loadable = class Loadable extends Cinema.Element {
 
     init () {
         this.$content = this.$container.children('.loadable-content');
@@ -260,8 +248,8 @@ Cinema.LoadableContent = class LoadableContent extends Cinema.Element {
     onDone (data) {
         this.toggleLoading(false);
         this.$content.html(this.render(data));
-        this.translateContainer();
-        Jam.Helper.executeSerialImageLoading($(this.container));
+        Jam.t(this.$container);
+        Jam.Helper.executeSerialImageLoading(this.$container);
     }
 
     onFail (data) {

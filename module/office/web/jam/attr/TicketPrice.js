@@ -42,7 +42,7 @@ Jam.TicketPriceModelAttr = class TicketPrice extends Jam.ModelAttr {
     }
 
     parsePricing (data) {
-        data = data && data.pricing;
+        data = data?.pricing;
         if (!data) {
             return null;
         }

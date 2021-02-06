@@ -1,6 +1,6 @@
 'use strict';
 
-Cinema.Screening = class Screening extends Cinema.LoadableContent {
+Cinema.Screening = class Screening extends Cinema.Loadable {
 
     init () {
         super.init();
@@ -44,12 +44,12 @@ Cinema.Screening = class Screening extends Cinema.LoadableContent {
         this.defaultPrice = pricing.value;
         this.priceMap = Jam.ArrayHelper.index('seat', pricing.prices);
 
-        data.movie = Jam.Helper.escapeTags(movie._title);
+        data.movie = Jam.StringHelper.escapeTags(movie._title);
         data.poster = movie.poster;
         data.duration = movie.duration;
-        data.description = Jam.Helper.escapeTags(movie.description);
+        data.description = Jam.StringHelper.escapeTags(movie.description);
         data.date = data.date ? moment(data.date).format('LT L') : '';
-        data.hall = Jam.Helper.escapeTags(hall._title);
+        data.hall = Jam.StringHelper.escapeTags(hall._title);
         data.seats = this.renderSeats(seats);
         this.setModalAttrs(data, this.$buyModal);
         this.setModalAttrs(data, this.$ticketModal);

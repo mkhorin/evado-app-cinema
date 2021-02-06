@@ -2,9 +2,9 @@
 <div class="page" data-page="screening" data-handler="ScreeningPage">
 
     <ol class="breadcrumb">
-        <li><a href="#" data-action="schedule" data-t="">Main</a></li>
-        <li><a href="#" data-action="hall" data-t="">Hall</a></li>
-        <li data-t="">Screening</li>
+        <li class="breadcrumb-item"><a href="#" data-action="schedule" data-t="">Main</a></li>
+        <li class="breadcrumb-item"><a href="#" data-action="hall" data-t="">Hall</a></li>
+        <li class="breadcrumb-item" data-t="">Screening</li>
     </ol>
 
     <div class="screening loadable-container"
@@ -14,11 +14,11 @@
 
         <template data-id="item">
             <div class="head row">
-                <div class="col-sm-3">
+                <div class="col-md-3">
                     <img data-src="<%- _url('/api/base/file/thumbnail') %>?s=small&c=poster&id={{poster}}"
-                         class="thumbnail img-responsive" alt="{{movie}}">
+                         class="img-thumbnail img-fluid" alt="{{movie}}">
                 </div>
-                <div class="col-sm-9">
+                <div class="col-md-9">
                     <h1>{{movie}}</h1>
                     <div class="description">{{description}}</div>
                     <div class="time">
@@ -58,30 +58,32 @@
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span></button>
-                        <h4 class="modal-title" data-t="">Buy ticket</h4>
+                        <h5 class="modal-title" data-t="">Buy ticket</h5>
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
                     </div>
                     <div class="modal-body">
-                        <div class="form-horizontal form">
-                            <div class="form-group">
-                                <label class="control-label col-sm-3" data-t="">Movie</label>
-                                <p class="form-control-static col-sm-9" data-id="movie"></p>
+                        <div class="form">
+                            <div class="form-group row">
+                                <label class="col-md-3 col-form-label" data-t="">Movie</label>
+                                <p class="col-md-9 form-control-plaintext" data-id="movie"></p>
                             </div>
-                            <div class="form-group">
-                                <label class="control-label col-sm-3" data-t="">Seat</label>
-                                <p class="form-control-static col-sm-9" data-id="seat"></p>
+                            <div class="form-group row">
+                                <label class="col-md-3 col-form-label" data-t="">Seat</label>
+                                <p class="col-md-9 form-control-plaintext" data-id="seat"></p>
                             </div>
-                            <div class="form-group">
-                                <label class="control-label col-sm-3" data-t="">Price</label>
-                                <p class="form-control-static col-sm-9" data-id="price"></p>
+                            <div class="form-group row">
+                                <label class="col-md-3 col-form-label" data-t="">Price</label>
+                                <p class="col-md-9 form-control-plaintext" data-id="price"></p>
                             </div>
                             <div class="alert-danger alert">Something went wrong. Please try again later!</div>
                         </div>
                     </div>
                     <div class="modal-footer">
                         <div class="text-center">
-                            <button class="btn btn-warning" data-action="buy" title="Buy" data-t="">Buy</button>
-                            <button class="btn btn-default" data-dismiss="modal" title="Cancel" data-t="">Close</button>
+                            <button class="btn-success btn" data-action="buy" title="Buy" data-t="">Buy</button>
+                            <button class="btn-outline-secondary btn" data-dismiss="modal" title="Cancel" data-t="">Close</button>
                         </div>
                     </div>
                 </div>
@@ -92,38 +94,39 @@
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span>
+                        <h5 class="modal-title" data-t="">Ticket</h5>
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span aria-hidden="true">&times;</span>
                         </button>
-                        <h4 class="modal-title" data-t="">Ticket</h4>
                     </div>
                     <div class="modal-body">
-                        <div class="form-horizontal form">
-                            <div class="form-group">
-                                <label class="control-label col-sm-3" data-t="">Movie</label>
-                                <p class="form-control-static col-sm-9" data-id="movie"></p>
+                        <div class="form">
+                            <div class="form-group row">
+                                <label class="col-md-3 col-form-label" data-t="">Movie</label>
+                                <p class="col-md-9 form-control-plaintext" data-id="movie"></p>
                             </div>
-                            <div class="form-group">
-                                <label class="control-label col-sm-3" data-t="">Start at</label>
-                                <p class="form-control-static col-sm-9" data-id="date"></p>
+                            <div class="form-group row">
+                                <label class="col-md-3 col-form-label" data-t="">Start at</label>
+                                <p class="col-md-9 form-control-plaintext" data-id="date"></p>
                             </div>
-                            <div class="form-group">
-                                <label class="control-label col-sm-3" data-t="">Hall</label>
-                                <p class="form-control-static col-sm-9" data-id="hall"></p>
+                            <div class="form-group row">
+                                <label class="col-md-3 col-form-label" data-t="">Hall</label>
+                                <p class="col-md-9 form-control-plaintext" data-id="hall"></p>
                             </div>
-                            <div class="form-group">
-                                <label class="control-label col-sm-3" data-t="">Seat</label>
-                                <p class="form-control-static col-sm-9" data-id="seat"></p>
+                            <div class="form-group row">
+                                <label class="col-md-3 col-form-label" data-t="">Seat</label>
+                                <p class="col-md-9 form-control-plaintext" data-id="seat"></p>
                             </div>
-                            <div class="form-group">
-                                <label class="control-label col-sm-3" data-t="">Ticket</label>
-                                <p class="form-control-static col-sm-9" data-id="ticket"></p>
+                            <div class="form-group row">
+                                <label class="col-md-3 col-form-label" data-t="">Ticket</label>
+                                <p class="col-md-9 form-control-plaintext" data-id="ticket"></p>
                             </div>
                             <div class="alert-success alert" data-t="">Your ticket ready! Have a nice watching!</div>
                         </div>
                     </div>
                     <div class="modal-footer">
                         <div class="text-center">
-                            <button class="btn btn-default" data-dismiss="modal">Close</button>
+                            <button class="btn-outline-secondary btn" data-dismiss="modal">Close</button>
                         </div>
                     </div>
                 </div>
