@@ -79,6 +79,7 @@ module.exports = {
     sideMenu: require('./default-sideMenu'),
     params: {        
         'enablePasswordReset': false,
-        'enableSignUp': false
+        'enableSignUp': false,
+        'languageToggle': true
     }
 };
