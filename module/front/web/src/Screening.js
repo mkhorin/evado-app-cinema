@@ -32,7 +32,7 @@ Cinema.Screening = class Screening extends Cinema.Loadable {
         this.setModalAttr('price', this.getPrice(this.seat), this.$buyModal);
         this.setModalAttr('seat', this.seat._title, this.$ticketModal);
         this.$buyModal.find('.alert').hide();
-        this.$buyModal.modal();
+        this.buyModal = Jam.showModal(this.$buyModal);
     }
 
     render (data) {
@@ -108,8 +108,8 @@ Cinema.Screening = class Screening extends Cinema.Loadable {
 
     onBuyDone (data) {
         this.cinema.toggleLoader(false);
-        this.$buyModal.modal('hide');
-        this.$ticketModal.modal();
+        this.buyModal?.hide();
+        this.ticketModal = Jam.showModal(this.$ticketModal);
         this.$ticketModal.find('[data-id="ticket"]').html(data);
         this.find(`[data-seat="${this.seat._id}"]`).removeClass('free');
     }
