@@ -4,7 +4,7 @@
   "header": ".title",
   "label": "Poster",
   "options": {
-    "thumbnail": "tiny"
+    "thumbnail": "xs"
   },
   "attrs": [
     {
@@ -37,7 +37,7 @@
       "history": false,
       "multiple": false,
       "options": {
-        "thumbnail": "small"
+        "thumbnail": "sm"
       },
       "orderNumber": 20,
       "sortable": false,

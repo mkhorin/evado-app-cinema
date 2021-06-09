@@ -4,7 +4,7 @@
       "$oid": "5e41008a62a34e1e2c647be5"
     },
     "name": "alien.jpg",
-    "mime": "image/jpeg",
+    "type": "image/jpeg",
     "size": 52682,
     "file": "2020-02/5e41008a62a34e1e2c647be4",
     "createdAt": {
@@ -22,7 +22,7 @@
       "$oid": "5e41009862a34e1e2c647be8"
     },
     "name": "blade-runner.jpg",
-    "mime": "image/jpeg",
+    "type": "image/jpeg",
     "size": 54757,
     "file": "2020-02/5e41009862a34e1e2c647be7",
     "createdAt": {
@@ -40,7 +40,7 @@
       "$oid": "5e4101da62a34e1e2c647beb"
     },
     "name": "die-hard.jpg",
-    "mime": "image/jpeg",
+    "type": "image/jpeg",
     "size": 36550,
     "file": "2020-02/5e4101da62a34e1e2c647bea",
     "createdAt": {
@@ -58,7 +58,7 @@
       "$oid": "5e4101f662a34e1e2c647bee"
     },
     "name": "fight-club.jpg",
-    "mime": "image/jpeg",
+    "type": "image/jpeg",
     "size": 46584,
     "file": "2020-02/5e4101f662a34e1e2c647bed",
     "createdAt": {
@@ -76,7 +76,7 @@
       "$oid": "5e41022d62a34e1e2c647bf1"
     },
     "name": "gladiator.jpg",
-    "mime": "image/jpeg",
+    "type": "image/jpeg",
     "size": 45349,
     "file": "2020-02/5e41022d62a34e1e2c647bf0",
     "createdAt": {
@@ -94,7 +94,7 @@
       "$oid": "5e41026362a34e1e2c647bf4"
     },
     "name": "inception.jpg",
-    "mime": "image/jpeg",
+    "type": "image/jpeg",
     "size": 87413,
     "file": "2020-02/5e41026362a34e1e2c647bf3",
     "createdAt": {
@@ -112,7 +112,7 @@
       "$oid": "5e41027b62a34e1e2c647bf7"
     },
     "name": "jurassic-park.jpg",
-    "mime": "image/jpeg",
+    "type": "image/jpeg",
     "size": 87192,
     "file": "2020-02/5e41027b62a34e1e2c647bf6",
     "createdAt": {
@@ -130,7 +130,7 @@
       "$oid": "5e41029662a34e1e2c647bfa"
     },
     "name": "mattrix.jpg",
-    "mime": "image/jpeg",
+    "type": "image/jpeg",
     "size": 134721,
     "file": "2020-02/5e41029662a34e1e2c647bf9",
     "createdAt": {
@@ -148,7 +148,7 @@
       "$oid": "5e4102a962a34e1e2c647bfd"
     },
     "name": "pulp-fiction.jpg",
-    "mime": "image/jpeg",
+    "type": "image/jpeg",
     "size": 45596,
     "file": "2020-02/5e4102a962a34e1e2c647bfc",
     "createdAt": {
@@ -166,7 +166,7 @@
       "$oid": "5e4102b762a34e1e2c647c00"
     },
     "name": "seven.jpg",
-    "mime": "image/jpeg",
+    "type": "image/jpeg",
     "size": 64619,
     "file": "2020-02/5e4102b762a34e1e2c647bff",
     "createdAt": {

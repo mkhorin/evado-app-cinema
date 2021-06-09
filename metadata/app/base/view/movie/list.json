@@ -20,7 +20,7 @@
     {
       "name": "poster",
       "options": {
-        "thumbnail": "tiny"
+        "thumbnail": "xs"
       },
       "orderNumber": 40,
       "viewType": "thumbnail"

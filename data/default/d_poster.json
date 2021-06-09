@@ -6,7 +6,7 @@
     "file": "2020-02/5e41008a62a34e1e2c647be4",
     "title": "Alien",
     "_size": 52682,
-    "_mime": "image/jpeg",
+    "_type": "image/jpeg",
     "_creator": {
       "$oid": "5e40b9fc0eb9b81850e33cf8"
     },
@@ -22,7 +22,7 @@
     "file": "2020-02/5e41009862a34e1e2c647be7",
     "title": "Blade Runner",
     "_size": 54757,
-    "_mime": "image/jpeg",
+    "_type": "image/jpeg",
     "_creator": {
       "$oid": "5e40b9fc0eb9b81850e33cf8"
     },
@@ -38,7 +38,7 @@
     "file": "2020-02/5e4101da62a34e1e2c647bea",
     "title": "Die Hard",
     "_size": 36550,
-    "_mime": "image/jpeg",
+    "_type": "image/jpeg",
     "_creator": {
       "$oid": "5e40b9fc0eb9b81850e33cf8"
     },
@@ -54,7 +54,7 @@
     "file": "2020-02/5e4101f662a34e1e2c647bed",
     "title": "Fight Club",
     "_size": 46584,
-    "_mime": "image/jpeg",
+    "_type": "image/jpeg",
     "_creator": {
       "$oid": "5e40b9fc0eb9b81850e33cf8"
     },
@@ -70,7 +70,7 @@
     "file": "2020-02/5e41022d62a34e1e2c647bf0",
     "title": "Gladiator",
     "_size": 45349,
-    "_mime": "image/jpeg",
+    "_type": "image/jpeg",
     "_creator": {
       "$oid": "5e40b9fc0eb9b81850e33cf8"
     },
@@ -86,7 +86,7 @@
     "file": "2020-02/5e41026362a34e1e2c647bf3",
     "title": "Inception",
     "_size": 87413,
-    "_mime": "image/jpeg",
+    "_type": "image/jpeg",
     "_creator": {
       "$oid": "5e40b9fc0eb9b81850e33cf8"
     },
@@ -102,7 +102,7 @@
     "file": "2020-02/5e41027b62a34e1e2c647bf6",
     "title": "Jurassic Park",
     "_size": 87192,
-    "_mime": "image/jpeg",
+    "_type": "image/jpeg",
     "_creator": {
       "$oid": "5e40b9fc0eb9b81850e33cf8"
     },
@@ -118,7 +118,7 @@
     "file": "2020-02/5e41029662a34e1e2c647bf9",
     "title": "Matrix",
     "_size": 134721,
-    "_mime": "image/jpeg",
+    "_type": "image/jpeg",
     "_creator": {
       "$oid": "5e40b9fc0eb9b81850e33cf8"
     },
@@ -134,7 +134,7 @@
     "file": "2020-02/5e4102a962a34e1e2c647bfc",
     "title": "Pulp Fiction",
     "_size": 45596,
-    "_mime": "image/jpeg",
+    "_type": "image/jpeg",
     "_creator": {
       "$oid": "5e40b9fc0eb9b81850e33cf8"
     },
@@ -150,7 +150,7 @@
     "file": "2020-02/5e4102b762a34e1e2c647bff",
     "title": "Seven",
     "_size": 64619,
-    "_mime": "image/jpeg",
+    "_type": "image/jpeg",
     "_creator": {
       "$oid": "5e40b9fc0eb9b81850e33cf8"
     },
