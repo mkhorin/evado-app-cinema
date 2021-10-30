@@ -9,9 +9,11 @@
       "label": "Name",
       "type": "string",
       "commonSearchable": true,
+      "createOnRead": false,
       "eagerLoading": false,
       "escape": true,
       "hidden": false,
+      "hideEmpty": false,
       "history": false,
       "multiple": false,
       "orderNumber": 10,
@@ -20,6 +22,7 @@
       "readOnly": false,
       "required": true,
       "selectSearchable": true,
+      "signed": false,
       "trim": true,
       "unique": true
     },
@@ -28,9 +31,11 @@
       "label": "Description",
       "type": "text",
       "commonSearchable": false,
+      "createOnRead": false,
       "eagerLoading": false,
       "escape": true,
       "hidden": false,
+      "hideEmpty": false,
       "history": false,
       "multiple": false,
       "orderNumber": 20,
@@ -39,6 +44,7 @@
       "readOnly": false,
       "required": false,
       "selectSearchable": false,
+      "signed": false,
       "trim": true,
       "unique": false
     },
@@ -48,6 +54,7 @@
       "type": "calc",
       "description": "Counts all seats in a hall",
       "commonSearchable": false,
+      "createOnRead": false,
       "eagerLoading": false,
       "escape": true,
       "expression": [
@@ -58,6 +65,7 @@
         }
       ],
       "hidden": false,
+      "hideEmpty": false,
       "history": false,
       "multiple": false,
       "orderNumber": 30,
@@ -66,6 +74,7 @@
       "readOnly": false,
       "required": false,
       "selectSearchable": false,
+      "signed": false,
       "trim": true,
       "unique": false
     },
@@ -80,10 +89,12 @@
         "delete"
       ],
       "commonSearchable": false,
+      "createOnRead": false,
       "eagerLoading": false,
       "escape": true,
       "group": "seats",
       "hidden": false,
+      "hideEmpty": false,
       "history": false,
       "listView": "inHall",
       "multiple": true,
@@ -95,6 +106,7 @@
       "readOnly": false,
       "required": false,
       "selectSearchable": false,
+      "signed": false,
       "trim": true,
       "unique": false
     },
@@ -108,10 +120,12 @@
         "delete"
       ],
       "commonSearchable": false,
+      "createOnRead": false,
       "eagerLoading": false,
       "escape": true,
       "group": "screening",
       "hidden": false,
+      "hideEmpty": false,
       "history": false,
       "multiple": true,
       "options": {
@@ -125,6 +139,7 @@
       "readOnly": false,
       "required": false,
       "selectSearchable": false,
+      "signed": false,
       "trim": true,
       "unique": false
     },
@@ -138,10 +153,12 @@
         "delete"
       ],
       "commonSearchable": false,
+      "createOnRead": false,
       "eagerLoading": false,
       "escape": true,
       "group": "pricing",
       "hidden": false,
+      "hideEmpty": false,
       "history": false,
       "multiple": true,
       "orderNumber": 70,
@@ -152,6 +169,7 @@
       "readOnly": false,
       "required": false,
       "selectSearchable": false,
+      "signed": false,
       "trim": true,
       "unique": false
     }
@@ -160,26 +178,38 @@
     {
       "name": "tabs",
       "label": "Tabs",
+      "loadable": false,
       "orderNumber": 1000,
+      "readOnly": false,
+      "required": false,
       "type": "tabs"
     },
     {
       "name": "screening",
       "label": "Screening",
+      "loadable": false,
       "orderNumber": 1010,
-      "parent": "tabs"
+      "parent": "tabs",
+      "readOnly": false,
+      "required": false
     },
     {
       "name": "pricing",
       "label": "Pricing",
+      "loadable": false,
       "orderNumber": 1020,
-      "parent": "tabs"
+      "parent": "tabs",
+      "readOnly": false,
+      "required": false
     },
     {
       "name": "seats",
       "label": "Seats",
+      "loadable": false,
       "orderNumber": 1030,
-      "parent": "tabs"
+      "parent": "tabs",
+      "readOnly": false,
+      "required": false
     }
   ]
 }

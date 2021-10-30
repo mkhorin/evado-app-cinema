@@ -12,9 +12,11 @@
       "label": "Title",
       "type": "string",
       "commonSearchable": true,
+      "createOnRead": false,
       "eagerLoading": false,
       "escape": true,
       "hidden": false,
+      "hideEmpty": false,
       "history": false,
       "multiple": false,
       "orderNumber": 10,
@@ -23,6 +25,7 @@
       "readOnly": false,
       "required": true,
       "selectSearchable": true,
+      "signed": false,
       "trim": true,
       "unique": true
     },
@@ -31,9 +34,11 @@
       "label": "Image",
       "type": "file",
       "commonSearchable": false,
+      "createOnRead": false,
       "eagerLoading": false,
       "escape": true,
       "hidden": false,
+      "hideEmpty": false,
       "history": false,
       "multiple": false,
       "options": {
@@ -45,6 +50,7 @@
       "readOnly": false,
       "required": true,
       "selectSearchable": false,
+      "signed": false,
       "trim": true,
       "unique": false
     }
@@ -55,7 +61,8 @@
       "orderNumber": 10,
       "imageOnly": true,
       "nameAttr": "title",
-      "accept": "image/*"
+      "accept": "image/*",
+      "hashing": false
     }
   ]
 }

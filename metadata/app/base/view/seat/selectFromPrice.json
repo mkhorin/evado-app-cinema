@@ -3,6 +3,7 @@
   "filter": {
     "hall": "$dependency.pricing.hall"
   },
+  "readOnly": false,
   "attrs": [
     {
       "name": "row",

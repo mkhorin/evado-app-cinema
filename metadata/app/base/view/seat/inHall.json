@@ -1,6 +1,7 @@
 {
   "label": "In hall",
   "description": "Seats in hall",
+  "readOnly": false,
   "attrs": [
     {
       "name": "row",

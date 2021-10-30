@@ -4,6 +4,7 @@
   "filter": {
     "active": true
   },
+  "readOnly": false,
   "attrs": [
     {
       "name": "date",

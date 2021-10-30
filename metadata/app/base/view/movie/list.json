@@ -4,6 +4,7 @@
   "order": {
     "title": 1
   },
+  "readOnly": false,
   "attrs": [
     {
       "name": "title",

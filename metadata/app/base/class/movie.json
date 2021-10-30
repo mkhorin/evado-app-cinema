@@ -9,9 +9,11 @@
       "label": "Title",
       "type": "string",
       "commonSearchable": true,
+      "createOnRead": false,
       "eagerLoading": false,
       "escape": true,
       "hidden": false,
+      "hideEmpty": false,
       "history": false,
       "multiple": false,
       "orderNumber": 10,
@@ -20,6 +22,7 @@
       "readOnly": false,
       "required": true,
       "selectSearchable": true,
+      "signed": false,
       "trim": true,
       "unique": true
     },
@@ -28,10 +31,12 @@
       "label": "Description",
       "type": "text",
       "commonSearchable": true,
+      "createOnRead": false,
       "eagerLoading": false,
       "escape": true,
       "group": "main",
       "hidden": false,
+      "hideEmpty": false,
       "history": false,
       "multiple": false,
       "orderNumber": 20,
@@ -40,6 +45,7 @@
       "readOnly": false,
       "required": false,
       "selectSearchable": false,
+      "signed": false,
       "trim": true,
       "unique": false
     },
@@ -49,10 +55,12 @@
       "type": "integer",
       "description": "Movie duration",
       "commonSearchable": false,
+      "createOnRead": false,
       "eagerLoading": false,
       "escape": true,
       "group": "main",
       "hidden": false,
+      "hideEmpty": false,
       "hint": "In minutes",
       "history": false,
       "multiple": false,
@@ -62,6 +70,7 @@
       "readOnly": false,
       "required": true,
       "selectSearchable": false,
+      "signed": false,
       "trim": true,
       "unique": false
     },
@@ -75,10 +84,12 @@
         "edit"
       ],
       "commonSearchable": false,
+      "createOnRead": false,
       "eagerLoading": false,
       "escape": true,
       "group": "main",
       "hidden": false,
+      "hideEmpty": false,
       "history": false,
       "multiple": false,
       "orderNumber": 40,
@@ -88,6 +99,7 @@
       "readOnly": false,
       "required": false,
       "selectSearchable": false,
+      "signed": false,
       "trim": true,
       "unique": false
     },
@@ -100,10 +112,12 @@
         "edit"
       ],
       "commonSearchable": false,
+      "createOnRead": false,
       "eagerLoading": false,
       "escape": true,
       "group": "screenings",
       "hidden": false,
+      "hideEmpty": false,
       "history": false,
       "multiple": true,
       "options": {
@@ -117,6 +131,7 @@
       "readOnly": true,
       "required": false,
       "selectSearchable": false,
+      "signed": false,
       "trim": true,
       "unique": false
     },
@@ -131,10 +146,12 @@
         "edit"
       ],
       "commonSearchable": false,
+      "createOnRead": false,
       "eagerLoading": false,
       "escape": true,
       "group": "tickets",
       "hidden": false,
+      "hideEmpty": false,
       "history": false,
       "multiple": true,
       "options": {
@@ -151,6 +168,7 @@
       "readOnly": true,
       "required": false,
       "selectSearchable": false,
+      "signed": false,
       "trim": true,
       "unique": false,
       "via": {
@@ -163,27 +181,39 @@
     {
       "name": "tabs",
       "label": "Tabs",
+      "loadable": false,
       "orderNumber": 1000,
+      "readOnly": false,
+      "required": false,
       "type": "tabs"
     },
     {
       "active": true,
       "name": "main",
       "label": "Main",
+      "loadable": false,
       "orderNumber": 1010,
-      "parent": "tabs"
+      "parent": "tabs",
+      "readOnly": false,
+      "required": false
     },
     {
       "name": "screenings",
       "label": "Screenings",
+      "loadable": false,
       "orderNumber": 1020,
-      "parent": "tabs"
+      "parent": "tabs",
+      "readOnly": false,
+      "required": false
     },
     {
       "name": "tickets",
       "label": "Tickets",
+      "loadable": false,
       "orderNumber": 1030,
-      "parent": "tabs"
+      "parent": "tabs",
+      "readOnly": false,
+      "required": false
     }
   ]
 }

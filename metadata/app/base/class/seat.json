@@ -15,9 +15,11 @@
       "type": "integer",
       "description": "Seat location row number",
       "commonSearchable": false,
+      "createOnRead": false,
       "eagerLoading": false,
       "escape": true,
       "hidden": false,
+      "hideEmpty": false,
       "history": false,
       "multiple": false,
       "orderNumber": 10,
@@ -26,6 +28,7 @@
       "readOnly": false,
       "required": true,
       "selectSearchable": true,
+      "signed": false,
       "trim": true,
       "unique": false
     },
@@ -35,9 +38,11 @@
       "type": "integer",
       "description": "Seat location column number",
       "commonSearchable": false,
+      "createOnRead": false,
       "eagerLoading": false,
       "escape": true,
       "hidden": false,
+      "hideEmpty": false,
       "history": false,
       "multiple": false,
       "orderNumber": 20,
@@ -46,11 +51,13 @@
       "readOnly": false,
       "required": true,
       "selectSearchable": true,
+      "signed": false,
       "trim": true,
       "unique": false,
       "rules": [
         {
           "type": "unique",
+          "orderNumber": 10,
           "filter": "hall, row",
           "ignoreCase": false
         }
@@ -65,9 +72,11 @@
         "edit"
       ],
       "commonSearchable": false,
+      "createOnRead": false,
       "eagerLoading": true,
       "escape": true,
       "hidden": false,
+      "hideEmpty": false,
       "history": false,
       "multiple": false,
       "onDelete": "cascade",
@@ -78,6 +87,7 @@
       "readOnly": true,
       "required": true,
       "selectSearchable": false,
+      "signed": false,
       "trim": true,
       "unique": false
     }

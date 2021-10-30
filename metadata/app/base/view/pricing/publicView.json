@@ -1,5 +1,6 @@
 {
   "label": "Public view",
+  "readOnly": false,
   "attrs": [
     {
       "name": "value",

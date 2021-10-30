@@ -1,6 +1,7 @@
 {
   "label": "List",
   "description": "Default list",
+  "readOnly": false,
   "attrs": [
     {
       "name": "screening",

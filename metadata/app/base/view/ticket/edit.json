@@ -1,5 +1,6 @@
 {
   "label": "Ticket view",
+  "readOnly": false,
   "attrs": [
     {
       "name": "screening",

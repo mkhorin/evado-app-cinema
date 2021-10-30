@@ -3,6 +3,7 @@
   "filter": {
     "hall": "$dependency.hall"
   },
+  "readOnly": false,
   "attrs": [
     {
       "name": "name",

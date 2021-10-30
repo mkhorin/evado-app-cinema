@@ -11,6 +11,7 @@
       "$dependency.screening.tickets.seat.$key"
     ]
   ],
+  "readOnly": false,
   "attrs": [
     {
       "name": "row",

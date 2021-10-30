@@ -1,5 +1,6 @@
 {
   "label": "Edit",
+  "readOnly": false,
   "attrs": [
     {
       "name": "name",

@@ -1,6 +1,7 @@
 {
   "label": "Public create",
   "description": "Create ticket by front guest users",
+  "readOnly": false,
   "attrs": [
     {
       "name": "screening",

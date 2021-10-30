@@ -1,5 +1,6 @@
 {
   "label": "Ticket creation",
+  "readOnly": false,
   "attrs": [
     {
       "name": "screening",

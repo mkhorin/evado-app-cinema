@@ -1,6 +1,7 @@
 {
   "label": "Create",
   "description": "Creation form",
+  "readOnly": false,
   "attrs": [
     {
       "name": "active",
@@ -21,7 +22,6 @@
     },
     {
       "name": "pricing",
-      "group": null,
       "orderNumber": 60
     }
   ]

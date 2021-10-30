@@ -1,6 +1,7 @@
 {
   "label": "Public seats",
   "description": "Load hall seats",
+  "readOnly": false,
   "attrs": [
     {
       "name": "name",

@@ -1,12 +1,13 @@
 {
   "label": "Public list",
-  "description": "Active screenings ",
+  "description": "Active screenings",
   "filter": {
     "active": true
   },
   "order": {
     "date": 1
   },
+  "readOnly": false,
   "attrs": [
     {
       "name": "date",

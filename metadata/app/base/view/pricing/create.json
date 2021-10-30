@@ -1,5 +1,6 @@
 {
   "label": "Create",
+  "readOnly": false,
   "attrs": [
     {
       "name": "name",

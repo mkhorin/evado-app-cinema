@@ -25,10 +25,12 @@
       "type": "boolean",
       "description": "Active for ticket sales",
       "commonSearchable": false,
+      "createOnRead": false,
       "defaultValue": "true",
       "eagerLoading": false,
       "escape": true,
       "hidden": false,
+      "hideEmpty": false,
       "history": false,
       "multiple": false,
       "orderNumber": 10,
@@ -37,6 +39,7 @@
       "readOnly": false,
       "required": false,
       "selectSearchable": false,
+      "signed": false,
       "trim": true,
       "unique": false
     },
@@ -47,9 +50,11 @@
       "viewType": "localDatetime",
       "description": "Movie screening time",
       "commonSearchable": false,
+      "createOnRead": false,
       "eagerLoading": false,
       "escape": true,
       "hidden": false,
+      "hideEmpty": false,
       "history": false,
       "multiple": false,
       "options": {
@@ -61,6 +66,7 @@
       "readOnly": false,
       "required": true,
       "selectSearchable": false,
+      "signed": false,
       "trim": true,
       "unique": false
     },
@@ -74,9 +80,11 @@
         "edit"
       ],
       "commonSearchable": false,
+      "createOnRead": false,
       "eagerLoading": true,
       "escape": true,
       "hidden": false,
+      "hideEmpty": false,
       "history": false,
       "multiple": false,
       "onDelete": "cascade",
@@ -87,6 +95,7 @@
       "readOnly": false,
       "required": true,
       "selectSearchable": false,
+      "signed": false,
       "trim": true,
       "unique": false
     },
@@ -100,9 +109,11 @@
         "edit"
       ],
       "commonSearchable": false,
+      "createOnRead": false,
       "eagerLoading": true,
       "escape": true,
       "hidden": false,
+      "hideEmpty": false,
       "history": false,
       "multiple": false,
       "onDelete": "cascade",
@@ -113,6 +124,7 @@
       "readOnly": true,
       "required": true,
       "selectSearchable": false,
+      "signed": false,
       "trim": true,
       "unique": false
     },
@@ -125,10 +137,12 @@
         "edit"
       ],
       "commonSearchable": false,
+      "createOnRead": false,
       "eagerLoading": false,
       "escape": true,
       "group": "pricing",
       "hidden": false,
+      "hideEmpty": false,
       "history": false,
       "multiple": false,
       "onDelete": "null",
@@ -147,6 +161,7 @@
       "required": true,
       "selectListView": "selectList",
       "selectSearchable": false,
+      "signed": false,
       "trim": true,
       "unique": false
     },
@@ -160,13 +175,18 @@
         "delete"
       ],
       "commonSearchable": false,
+      "createOnRead": false,
       "eagerLoading": false,
       "escape": true,
       "group": "tickets",
       "hidden": false,
+      "hideEmpty": false,
       "history": false,
       "listView": "inScreening",
       "multiple": true,
+      "options": {
+        "css": "no-label"
+      },
       "orderNumber": 70,
       "sortable": false,
       "sortableRelation": false,
@@ -175,11 +195,9 @@
       "readOnly": false,
       "required": false,
       "selectSearchable": false,
+      "signed": false,
       "trim": true,
-      "unique": false,
-      "options": {
-        "css": "no-label"
-      }
+      "unique": false
     },
     {
       "name": "freeSeats",
@@ -189,6 +207,7 @@
         "edit"
       ],
       "commonSearchable": false,
+      "createOnRead": false,
       "eagerLoading": false,
       "escape": true,
       "filter": {
@@ -196,8 +215,12 @@
       },
       "group": "freeSeats",
       "hidden": false,
+      "hideEmpty": false,
       "history": false,
       "multiple": true,
+      "options": {
+        "css": "no-label"
+      },
       "orderNumber": 80,
       "sortable": false,
       "sortableRelation": false,
@@ -205,38 +228,48 @@
       "readOnly": true,
       "required": false,
       "selectSearchable": false,
+      "signed": false,
       "trim": true,
-      "unique": false,
-      "options": {
-        "css": "no-label"
-      }
+      "unique": false
     }
   ],
   "groups": [
     {
       "name": "tabs",
       "label": "Tabs",
+      "loadable": false,
       "orderNumber": 1000,
+      "readOnly": false,
+      "required": false,
       "type": "tabs"
     },
     {
       "active": true,
       "name": "pricing",
       "label": "Pricing",
+      "loadable": false,
       "orderNumber": 1010,
-      "parent": "tabs"
+      "parent": "tabs",
+      "readOnly": false,
+      "required": false
     },
     {
       "name": "tickets",
       "label": "Tickets",
+      "loadable": false,
       "orderNumber": 1020,
-      "parent": "tabs"
+      "parent": "tabs",
+      "readOnly": false,
+      "required": false
     },
     {
       "name": "freeSeats",
       "label": "Free seats",
+      "loadable": false,
       "orderNumber": 1030,
-      "parent": "tabs"
+      "parent": "tabs",
+      "readOnly": false,
+      "required": false
     }
   ]
 }
