@@ -10,6 +10,7 @@
 Object.assign(Jam.I18n.defaults, {
 
     'Test utility': 'Тестовая утилита'
+
 });
 
 /**
