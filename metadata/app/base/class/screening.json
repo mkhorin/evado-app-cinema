@@ -148,9 +148,7 @@
       "onDelete": "null",
       "options": {
         "relation": {
-          "depends": [
-            "hall"
-          ]
+          "depends": "hall"
         }
       },
       "orderNumber": 60,

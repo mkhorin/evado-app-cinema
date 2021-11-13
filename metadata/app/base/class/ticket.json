@@ -53,9 +53,7 @@
       "onDelete": "cascade",
       "options": {
         "relation": {
-          "depends": [
-            "screening"
-          ]
+          "depends": "screening"
         }
       },
       "orderNumber": 30,

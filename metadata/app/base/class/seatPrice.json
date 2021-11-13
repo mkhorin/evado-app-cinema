@@ -51,9 +51,7 @@
       "onDelete": "cascade",
       "options": {
         "relation": {
-          "depends": [
-            "pricing"
-          ]
+          "depends": "pricing"
         }
       },
       "orderNumber": 20,
