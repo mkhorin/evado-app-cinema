@@ -1,16 +1,37 @@
 <%
 layout(_view.get('_layout/content'));
 
-script('front/vendor/front.min.js');
-script('front/script/module.js');
+script('front/vendor/vue/vue.js');
+script('front/script/breadcrumbs.js');
+script('front/script/hall.js');
+script('front/script/modalDialog.js');
+script('front/script/pagination.js');
+script('front/script/schedule.js');
+script('front/script/screening.js');
+script('front/script/searchMovies.js');
+script('front/script/front.js');
+
+const user = _controller.user;
 %>
+
+<%- include('./_breadcrumbs') %>
+<%- include('./_hall') %>
+<%- include('./_modalDialog') %>
+<%- include('./_pagination') %>
+<%- include('./_schedule') %>
+<%- include('./_screening') %>
+<%- include('./_searchMovies') %>
 
 <%- include(_view.get('_part/signboard')) %>
 
-<div class="cinema">
+<div id="front"
+     data-user-id="<%- user.getId() %>"
+     data-auth-url="<%- _url('/auth/sign-in?returnUrl=/front') %>"
+     data-data-url="<%- _url('/api/base/data') %>"
+     data-thumbnail-url="<%- _url('/api/base/file/thumbnail') %>?c=poster"
+     data-csrf="<%- _controller.getCsrfToken() %>">
 
-    <%- include('./_schedule') %>
-    <%- include('./_hall') %>
-    <%- include('./_screening') %>
-
+    <keep-alive include="schedule,hall">
+        <componen :is="activePage" v-bind="activePageProps"></componen>
+    </keep-alive>
 </div>

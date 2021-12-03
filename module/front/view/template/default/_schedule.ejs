@@ -1,53 +1,42 @@
+<template id="schedule">
+    <div class="page">
 
-<div class="page" data-page="schedule" data-handler="SchedulePage">
+        <h1 data-t="">Movie schedule</h1>
 
-    <h1 data-t="">Movie schedule</h1>
+        <div class="loadable-container">
 
-    <form class="search-form" data-handler="Search">
-        <div class="input-group">
-            <input type="search" class="form-control" placeholder="Search for...">
-            <span class="input-group-btn">
-                <button class="btn btn-primary" type="submit">
-                    <i class="fas fa-search"></i>
-                </button>
-            </span>
-        </div>
-    </form>
+            <search-movies @search="onSearch"></search-movies>
 
-    <div class="screening-list loadable-container"
-         data-handler="ScheduleScreeningList"
-         data-url="<%- _url('/api/base/data/list') %>">
-
-        <template data-id="list">
-            <div class="row">{{items}}</div>
-        </template>
-
-        <template data-id="item">
-            <div class="col-md-6 col-lg-4">
-                <div class="screening-card" data-screening="{{_id}}">
-                    <a href="#" data-action="screening">
-                        <img data-src="<%- _url('/api/base/file/thumbnail') %>?s=sm&c=poster&id={{poster}}"
-                             class="img-thumbnail img-fluid" alt="{{movie}}">
-                    </a>
-                    <h3><a href="#" data-action="screening">{{movie}}</a></h3>
-                    <time>{{date}}</time>
-                    <h4>
-                        <span data-t="">Cinema hall:</span>
-                        <a href="#" data-action="hall" data-hall="{{hall}}"
-                           data-name="{{hallName}}"
-                           data-description="{{hallDescription}}">{{hallName}}</a>
-                    </h4>
+            <div class="screening-list">
+                <div class="row">
+                    <div v-for="item of items" class="col-md-6 col-lg-4">
+                        <div class="screening-card">
+                            <a v-if="item.poster" @click.prevent="onScreening" :data-id="item.id" href="#">
+                                <img :src="item.poster" :alt="item.movie" class="img-thumbnail img-fluid">
+                            </a>
+                            <h3><a @click.prevent="onScreening" :data-id="item.id" href="#">{{item.movie}}</a></h3>
+                            <time>{{item.date}}</time>
+                            <h4>
+                                <span data-t="">Cinema hall:</span>
+                                <a @click.prevent="onHall" href="#"
+                                   :data-id="item.hall"
+                                   :data-name="item.hallName"
+                                   :data-description="item.hallDescription">{{item.hallName}}</a>
+                            </h4>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </template>
 
-        <template data-id="error">
-            <div class="alert-danger alert">{{text}}</div>
-        </template>
+            <pagination></pagination>
 
-        <%- include('./_pagination') %>
+            <div v-show="!loading && empty" class="alert-warning alert">
+                <span data-t="">No screenings found</span>
+            </div>
 
-        <div class="loadable-content"></div>
-        <div class="loader"><i class="fa fa-spinner fa-spin"></i></div>
+            <div v-show="loading" class="loader">
+                <i class="fa fa-spinner fa-spin"></i>
+            </div>
+        </div>
     </div>
-</div>
+</template>

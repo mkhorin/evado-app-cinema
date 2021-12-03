@@ -1,61 +1,56 @@
+<template id="hall">
+    <div class="page">
 
-<div class="page" data-page="hall" data-handler="HallPage">
+        <breadcrumbs>
+            <template #path>
+                <li class="breadcrumb-item"><a @click.prevent="toSchedule" href="#" data-t="">Main</a></li>
+                <li class="breadcrumb-item" data-t="meta">Hall</li>
+            </template>
+        </breadcrumbs>
 
-    <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="#" data-t="" data-action="schedule">Main</a></li>
-        <li class="breadcrumb-item" data-t="">Hall</li>
-    </ol>
+        <h1>{{hall.name}} Hall</h1>
 
-    <h1><span data-text="hall"></span> Hall</h1>
-    <h3 data-text="description"></h3>
+        <h4 v-if="hall.description">{{hall.description}}</h4>
 
-    <form class="search-form" data-handler="Search">
-        <div class="input-group">
-            <input type="search" class="form-control" placeholder="Search for...">
-            <span class="input-group-btn">
-                <button class="btn btn-primary" type="submit">
-                    <i class="fas fa-search"></i>
-                </button>
-            </span>
-        </div>
-    </form>
+        <div class="loadable-container">
 
-    <div class="screening-list loadable-container"
-         data-handler="HallScreeningList"
-         data-url="<%- _url('/api/base/data/list') %>">
+            <search-movies @search="onSearch"></search-movies>
 
-        <template data-id="list">
-            <div class="row">{{items}}</div>
-        </template>
-
-        <template data-id="item">
-            <div class="col-md-6">
-                <div class="screening-item" data-screening="{{_id}}">
-                    <div class="row">
-                        <div class="col-6">
-                            <img data-src="<%- _url('/api/base/file/thumbnail') %>?s=sm&c=poster&id={{poster}}"
-                                 class="img-thumbnail img-fluid" alt="{{movie}}">
-                        </div>
-                        <div class="col-6">
-                            <h3>{{movie}}</h3>
-                            <time>{{date}}</time>
-                            <div class="duration">
-                                <span data-t="">Duration</span> {{duration}} min.
+            <div class="screening-list">
+                <div class="row">
+                    <div v-for="item of items" class="col-md-6">
+                        <div class="screening-item">
+                            <div class="row">
+                                <div class="col-6">
+                                    <template v-if="item.poster">
+                                        <img :src="item.poster" :alt="item.movie" class="img-thumbnail img-fluid">
+                                    </template>
+                                </div>
+                                <div class="col-6">
+                                    <h3>{{item.movie}}</h3>
+                                    <time>{{item.date}}</time>
+                                    <div class="duration">
+                                        <span data-t="">Duration</span> {{item.duration}} min.
+                                    </div>
+                                    <button @click="onBuy" class="btn-success btn" :data-id="item.id">
+                                        <span data-t="">Buy ticket</span>
+                                    </button>
+                                </div>
                             </div>
-                            <button class="btn-success btn" data-action="screening" data-t="">Buy ticket</button>
                         </div>
                     </div>
                 </div>
             </div>
-        </template>
 
-        <template data-id="error">
-            <div class="alert-danger alert">{{text}}</div>
-        </template>
+            <pagination></pagination>
 
-        <%- include('./_pagination') %>
+            <div v-show="!loading && empty" class="alert-warning alert">
+                <span data-t="">No screenings found</span>
+            </div>
 
-        <div class="loadable-content"></div>
-        <div class="loader"><i class="fa fa-spinner fa-spin"></i></div>
+            <div v-show="loading" class="loader">
+                <i class="fa fa-spinner fa-spin"></i>
+            </div>
+        </div>
     </div>
-</div>
+</template>

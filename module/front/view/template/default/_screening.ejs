@@ -1,153 +1,127 @@
+<template id="screening">
+    <div class="page">
 
-<div class="page" data-page="screening" data-handler="ScreeningPage">
+        <breadcrumbs>
+            <template #path>
+                <li class="breadcrumb-item"><a @click.prevent="toSchedule" href="#" data-t="">Main</a></li>
+                <li class="breadcrumb-item"><a @click.prevent="onHall" href="#" data-t="">Hall</a></li>
+                <li class="breadcrumb-item" data-t="meta">Screening</li>
+            </template>
+        </breadcrumbs>
 
-    <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="#" data-action="schedule" data-t="">Main</a></li>
-        <li class="breadcrumb-item"><a href="#" data-action="hall" data-t="">Hall</a></li>
-        <li class="breadcrumb-item" data-t="">Screening</li>
-    </ol>
-
-    <div class="screening loadable-container"
-         data-handler="Screening"
-         data-create="<%- _url('/api/base/data/create') %>"
-         data-url="<%- _url('/api/base/data/read') %>">
-
-        <template data-id="item">
-            <div class="head row">
-                <div class="col-md-3">
-                    <img data-src="<%- _url('/api/base/file/thumbnail') %>?s=sm&c=poster&id={{poster}}"
-                         class="img-thumbnail img-fluid" alt="{{movie}}">
-                </div>
-                <div class="col-md-9">
-                    <h1>{{movie}}</h1>
-                    <div class="description">{{description}}</div>
-                    <div class="time">
-                        <span data-t="">Starts at</span>
-                        <time>{{date}}</time>
+        <div class="screening loadable-container">
+            <template v-show="!loading">
+                <div class="head row">
+                    <div class="col-md-3">
+                        <img v-if="poster" :src="poster" :alt="movie" class="img-thumbnail img-fluid" >
                     </div>
-                    <div class="duration">
-                        <span data-t="">Duration</span> {{duration}} min.
-                    </div>
-                </div>
-            </div>
-            <div class="hall">
-                <h3>{{hall}} hall seats</h3>
-                <div class="seats">{{seats}}</div>
-            </div>
-        </template>
-
-        <template data-id="seatRow">
-            <div class="seat-row">{{seats}}</div>
-        </template>
-
-        <template data-id="seat">
-            <div class="seat {{state}}" data-seat="{{_id}}">
-                <span class="sold" data-t="">Sold</span>
-                <span class="free" data-t="">Free</span>
-            </div>
-        </template>
-
-        <template data-id="error">
-            <div class="alert-danger alert">{{text}}</div>
-        </template>
-
-        <div class="loadable-content"></div>
-        <div class="loader"><i class="fa fa-spinner fa-spin"></i></div>
-
-        <div class="buy modal" tabindex="-1" role="dialog">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" data-t="">Buy ticket</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                    </div>
-                    <div class="modal-body">
-                        <div class="form">
-                            <div class="form-group row">
-                                <label class="col-md-3 col-form-label" data-t="">Movie</label>
-                                <div class="col-md-9">
-                                    <p class="form-control-plaintext" data-id="movie"></p>
-                                </div>
-                            </div>
-                            <div class="form-group row">
-                                <label class="col-md-3 col-form-label" data-t="">Seat</label>
-                                <div class="col-md-9">
-                                    <p class="form-control-plaintext" data-id="seat"></p>
-                                </div>
-                            </div>
-                            <div class="form-group row">
-                                <label class="col-md-3 col-form-label" data-t="">Price</label>
-                                <div class="col-md-9">
-                                    <p class="form-control-plaintext" data-id="price"></p>
-                                </div>
-                            </div>
-                            <div class="alert-danger alert mt-3">
-                                Something went wrong. Please try again later!
-                            </div>
+                    <div class="col-md-9">
+                        <h1>{{movie}}</h1>
+                        <div class="description">{{description}}</div>
+                        <div class="time">
+                            <span data-t="">Starts at</span>
+                            <time>{{date}}</time>
                         </div>
-                    </div>
-                    <div class="modal-footer">
-                        <div class="text-center">
-                            <button class="btn-success btn" data-action="buy" title="Buy" data-t="">Buy</button>
-                            <button class="btn-outline-secondary btn"
-                                    data-bs-dismiss="modal" title="Cancel" data-t="">Close</button>
+                        <div class="duration">
+                            <span data-t="">Duration</span> {{duration}} min.
                         </div>
                     </div>
                 </div>
+                <div class="hall">
+                    <h3>{{hall.name}} hall seats</h3>
+                    <div class="seats">
+                        <div v-for="seats of seatRows" class="seat-row">
+                            <template v-for="seat of seats">
+                                <div v-if="isFreeSeat(seat.id)" @click="onSeat" :data-id="seat.id" class="free seat">
+                                    <span class="free" data-t="">Free</span>
+                                    <span class="sold" data-t="">Sold</span>
+                                </div>
+                                <div v-else class="seat">
+                                    <span class="free" data-t="">Free</span>
+                                    <span class="sold" data-t="">Sold</span>
+                                </div>
+                            </template>
+                        </div>
+                        <div v-if="!seatRows.length" class="alert-danger alert">
+                            The hall has no seats
+                        </div>
+                    </div>
+                </div>
+            </template>
+
+            <div v-show="loading" class="loader">
+                <i class="fa fa-spinner fa-spin"></i>
             </div>
         </div>
 
-        <div class="ticket modal" tabindex="-1" role="dialog">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" data-t="">Ticket</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                    </div>
-                    <div class="modal-body">
-                        <div class="form">
-                            <div class="form-group row">
-                                <label class="col-md-3 col-form-label" data-t="">Movie</label>
-                                <div class="col-md-9">
-                                    <p class="form-control-plaintext" data-id="movie"></p>
-                                </div>
-                            </div>
-                            <div class="form-group row">
-                                <label class="col-md-3 col-form-label" data-t="">Start at</label>
-                                <div class="col-md-9">
-                                    <p class="form-control-plaintext" data-id="date"></p>
-                                </div>
-                            </div>
-                            <div class="form-group row">
-                                <label class="col-md-3 col-form-label" data-t="">Hall</label>
-                                <div class="col-md-9">
-                                    <p class="form-control-plaintext" data-id="hall"></p>
-                                </div>
-                            </div>
-                            <div class="form-group row">
-                                <label class="col-md-3 col-form-label" data-t="">Seat</label>
-                                <div class="col-md-9">
-                                    <p class="form-control-plaintext" data-id="seat"></p>
-                                </div>
-                            </div>
-                            <div class="form-group row">
-                                <label class="col-md-3 col-form-label" data-t="">Ticket</label>
-                                <div class="col-md-9">
-                                    <p class="form-control-plaintext" data-id="ticket"></p>
-                                </div>
-                            </div>
-                            <div class="alert-success alert mt-3">
-                                <span data-t="">Your ticket ready! Have a nice watching!</span>
-                            </div>
+        <modal-dialog ref="buyModal" title="Buy ticket">
+            <template #body>
+                <div class="form">
+                    <div class="form-group row">
+                        <label class="col-md-3 col-form-label" data-t="">Movie</label>
+                        <div class="col-md-9">
+                            <p class="form-control-plaintext">{{movie}}</p>
                         </div>
                     </div>
-                    <div class="modal-footer">
-                        <div class="text-center">
-                            <button class="btn-outline-secondary btn" data-bs-dismiss="modal">Close</button>
+                    <div class="form-group row">
+                        <label class="col-md-3 col-form-label" data-t="">Seat</label>
+                        <div class="col-md-9">
+                            <p class="form-control-plaintext">{{formattedSelectedSeat}}</p>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-md-3 col-form-label" data-t="">Price</label>
+                        <div class="col-md-9">
+                            <p class="form-control-plaintext">{{seatPrice}}</p>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
+            </template>
+            <template #footer>
+                <button @click="onBuy" class="btn-success btn" data-t="">Buy</button>
+            </template>
+        </modal-dialog>
+
+        <modal-dialog ref="ticketModal" title="Ticket">
+            <template #body>
+                <div class="form">
+                    <div class="form-group row">
+                        <label class="col-md-3 col-form-label" data-t="">Movie</label>
+                        <div class="col-md-9">
+                            <p class="form-control-plaintext">{{movie}}</p>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-md-3 col-form-label" data-t="">Start at</label>
+                        <div class="col-md-9">
+                            <p class="form-control-plaintext">{{date}}</p>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-md-3 col-form-label" data-t="">Hall</label>
+                        <div class="col-md-9">
+                            <p class="form-control-plaintext">{{hall.name}}</p>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-md-3 col-form-label" data-t="">Seat</label>
+                        <div class="col-md-9">
+                            <p class="form-control-plaintext">{{formattedSelectedSeat}}</p>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-md-3 col-form-label" data-t="">Ticket</label>
+                        <div class="col-md-9">
+                            <p class="form-control-plaintext">
+                                <b>{{ticket}}</b>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="alert-success alert mt-3">
+                        <span data-t="">Your ticket ready! Have a nice watching!</span>
+                    </div>
+                </div>
+            </template>
+        </modal-dialog>
     </div>
-</div>
+</template>

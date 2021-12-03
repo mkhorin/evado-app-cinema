@@ -13,29 +13,20 @@ body {
     position: relative;
 }
 .loadable-container > .loader {
-    display: none;
     position: absolute;
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
     z-index: 101;
-}
-.loadable-container.loading > .loader {
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
 }
 
 /* PAGE */
 
-.page {
-    display: none;
-}
-.page.active {
-    display: block;
-}
-.page > h3 {
+.page > h4 {
     color: #888;
 }
 

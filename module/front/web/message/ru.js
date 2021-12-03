@@ -18,8 +18,11 @@ Object.assign(Jam.I18n.defaults, {
     'Movie schedule': 'Расписание фильмов',
 
     'No movie screenings': 'Нет показов фильмов',
+    'No screenings found': 'Показов не найдено',
 
     'Price': 'Цена',
+
+    'Row': 'Ряд',
 
     'Screening': 'Показ',
     'Search for...': 'Искать...',
