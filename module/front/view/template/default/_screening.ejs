@@ -32,7 +32,7 @@
                     <div class="seats">
                         <div v-for="seats of seatRows" class="seat-row">
                             <template v-for="seat of seats">
-                                <div v-if="isFreeSeat(seat.id)" @click="onSeat" :data-id="seat.id" class="free seat">
+                                <div v-if="isFreeSeat(seat.id)" @click="onSeat(seat.id)" class="free seat">
                                     <span class="free" data-t="">Free</span>
                                     <span class="sold" data-t="">Sold</span>
                                 </div>

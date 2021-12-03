@@ -24,8 +24,8 @@ Vue.component('hall', {
         await this.reload();
     },
     methods: {
-        onBuy (event) {
-            this.$root.$emit('screening', event.currentTarget.dataset.id);
+        onBuy (id) {
+            this.$root.$emit('screening', id);
         },
         onSearch (text) {
             this.searchText = text;
@@ -82,7 +82,7 @@ Vue.component('hall', {
                 hall: item.hall?._id,
                 hallName: item.hall?._title,
                 hallDescription: item.hall?.description,
-                poster: this.getThumbnailUrl(item.movie?.poster, 'sm')
+                poster: this.getThumbnailUrl(item.movie?.poster)
             }));
         },
     },

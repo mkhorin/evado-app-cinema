@@ -11,17 +11,16 @@
                 <div class="row">
                     <div v-for="item of items" class="col-md-6 col-lg-4">
                         <div class="screening-card">
-                            <a v-if="item.poster" @click.prevent="onScreening" :data-id="item.id" href="#">
+                            <a v-if="item.poster" @click.prevent="onScreening(item.id)" href="#">
                                 <img :src="item.poster" :alt="item.movie" class="img-thumbnail img-fluid">
                             </a>
-                            <h3><a @click.prevent="onScreening" :data-id="item.id" href="#">{{item.movie}}</a></h3>
+                            <h3><a @click.prevent="onScreening(item.id)" href="#">{{item.movie}}</a></h3>
                             <time>{{item.date}}</time>
                             <h4>
                                 <span data-t="">Cinema hall:</span>
-                                <a @click.prevent="onHall" href="#"
-                                   :data-id="item.hall"
-                                   :data-name="item.hallName"
-                                   :data-description="item.hallDescription">{{item.hallName}}</a>
+                                <a @click.prevent="onHall(item.hall, item.hallName, item.hallDescription)" href="#">
+                                    {{item.hallName}}
+                                </a>
                             </h4>
                         </div>
                     </div>

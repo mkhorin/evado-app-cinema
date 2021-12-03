@@ -23,11 +23,11 @@ Vue.component('schedule', {
         await this.reload();
     },
     methods: {
-        onHall (event) {
-            this.$root.$emit('hall', {...event.currentTarget.dataset});
+        onHall (id, name, description) {
+            this.$root.$emit('hall', {id, name, description});
         },
-        onScreening (event) {
-            this.$root.$emit('screening', event.currentTarget.dataset.id);
+        onScreening (id) {
+            this.$root.$emit('screening', id);
         },
         onSearch (text) {
             this.searchText = text;
@@ -72,7 +72,7 @@ Vue.component('schedule', {
                 hall: item.hall?._id,
                 hallName: item.hall?._title,
                 hallDescription: item.hall?.description,
-                poster: this.getThumbnailUrl(item.movie?.poster, 'sm')
+                poster: this.getThumbnailUrl(item.movie?.poster)
             }));
         },
     },

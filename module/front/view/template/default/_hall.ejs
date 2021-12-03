@@ -32,7 +32,7 @@
                                     <div class="duration">
                                         <span data-t="">Duration</span> {{item.duration}} min.
                                     </div>
-                                    <button @click="onBuy" class="btn-success btn" :data-id="item.id">
+                                    <button @click="onBuy(item.id)" class="btn-success btn">
                                         <span data-t="">Buy ticket</span>
                                     </button>
                                 </div>

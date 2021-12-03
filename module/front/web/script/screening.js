@@ -38,8 +38,8 @@ Vue.component('screening', {
         onHall (event) {
             this.$root.$emit('hall', this.hall);
         },
-        onSeat (event) {
-            this.selectedSeat = this.seatMap[event.currentTarget.dataset.id];
+        onSeat (id) {
+            this.selectedSeat = this.seatMap[id];
             this.seatPrice = this.getPrice(this.selectedSeat);
             this.buyModal = Jam.showModal($(this.$refs.buyModal.$el));
         },
@@ -81,7 +81,7 @@ Vue.component('screening', {
             this.id = data._id;
             this.movie = data.movie._title;
             this.description = data.movie.description;
-            this.poster = this.getThumbnailUrl(data.movie.poster, 'sm');
+            this.poster = this.getThumbnailUrl(data.movie.poster);
             this.date = Jam.FormatHelper.asDate(data.date, 'LT L');
             this.duration = data.movie.duration;
             this.hall = {
