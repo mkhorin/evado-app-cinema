@@ -22,14 +22,16 @@ const front = new Vue({
     computed: {
         activePageProps () {
             switch (this.activePage) {
-                case 'hall': return {
-                    key: this.activeHall.id,
-                    hall: this.activeHall
-                };
-                case 'screening': return {
-                    key: this.activeScreening,
-                    screening: this.activeScreening
-                };
+                case 'hall':
+                    return {
+                        key: this.activeHall.id,
+                        hall: this.activeHall
+                    };
+                case 'screening':
+                    return {
+                        key: this.activeScreening,
+                        screening: this.activeScreening
+                    };
             }
         }
     },

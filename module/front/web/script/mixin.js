@@ -6,11 +6,6 @@ Vue.mixin({
             loading: false
         };
     },
-    computed: {
-        isGuest () {
-            return !this.$root.userId;
-        }
-    },
     mounted () {
         this.translateElement();
     },
@@ -18,6 +13,9 @@ Vue.mixin({
         this.translateElement();
     },
     methods: {
+        isGuest () {
+            return !this.$root.userId;
+        },
         getDataUrl (action) {
             return `${this.$root.dataUrl}/${action}`;
         },
