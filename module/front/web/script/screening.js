@@ -41,7 +41,7 @@ Vue.component('screening', {
         onSeat (id) {
             this.selectedSeat = this.seatMap[id];
             this.seatPrice = this.getPrice(this.selectedSeat);
-            this.buyModal = Jam.showModal($(this.$refs.buyModal.$el));
+            this.buyModal = this.showModal(this.$refs.buyModal);
         },
         async onBuy (event) {
             this.buyModal.hide();
@@ -55,7 +55,7 @@ Vue.component('screening', {
                     }
                 });
                 await this.reload();
-                Jam.showModal($(this.$refs.ticketModal.$el));
+                this.showModal(this.$refs.ticketModal);
             } catch (err) {
                 this.showError(err);
             }

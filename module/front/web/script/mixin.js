@@ -63,6 +63,9 @@ Vue.mixin({
         },
         showError () {
             Jam.dialog.error(...arguments);
+        },
+        showModal (ref) {
+            return Jam.showModal($(ref.$el));
         }
     }
 });
