@@ -41,10 +41,10 @@ Vue.component('screening', {
         onSeat (id) {
             this.selectedSeat = this.seatMap[id];
             this.seatPrice = this.getPrice(this.selectedSeat);
-            this.buyModal = this.showModal(this.$refs.buyModal);
+            this.$refs.buyModal.show();
         },
         async onBuy (event) {
-            this.buyModal.hide();
+            this.$refs.buyModal.hide();
             try {
                 this.ticket = await this.fetchText('create', {
                     class: 'ticket',
@@ -55,7 +55,7 @@ Vue.component('screening', {
                     }
                 });
                 await this.reload();
-                this.showModal(this.$refs.ticketModal);
+                this.$refs.ticketModal.show();
             } catch (err) {
                 this.showError(err);
             }
