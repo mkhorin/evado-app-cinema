@@ -1,12 +1,12 @@
 {
   "label": "Select from ticket",
   "filter": [
-    "AND",
+    "and",
     {
       "hall": "$dependency.screening.hall"
     },
     [
-      "NOT IN",
+      "notIn",
       "$key",
       "$dependency.screening.tickets.seat.$key"
     ]
