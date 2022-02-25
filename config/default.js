@@ -77,7 +77,7 @@ module.exports = {
     tasks: require('./default-tasks'),
     utilities: require('./default-utilities'),
     sideMenu: require('./default-sideMenu'),
-    params: {        
+    params: {
         'enablePasswordReset': false,
         'enableSignUp': false,
         'languageToggle': true
