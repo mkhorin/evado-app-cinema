@@ -58,7 +58,7 @@
       "history": false,
       "multiple": false,
       "options": {
-        "momentFormat": "L LT"
+        "dateFormat": "L LT"
       },
       "orderNumber": 30,
       "sortable": true,
