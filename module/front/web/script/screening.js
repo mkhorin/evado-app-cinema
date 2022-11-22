@@ -50,8 +50,8 @@ Vue.component('screening', {
                     class: 'ticket',
                     view: 'publicCreate',
                     data: {
-                        screening: {links: this.screening},
-                        seat: {links: this.selectedSeat.id}
+                        screening: this.screening,
+                        seat: this.selectedSeat.id
                     }
                 });
                 await this.reload();

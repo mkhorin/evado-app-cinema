@@ -1,41 +1,41 @@
 <template id="schedule">
-    <div class="page">
+  <div class="page">
 
-        <h1 data-t="">Movie schedule</h1>
+    <h1 data-t="">Movie schedule</h1>
 
-        <div class="loadable-container">
+    <div class="loadable-container">
 
-            <search-movies @search="onSearch"></search-movies>
+      <search-movies @search="onSearch"></search-movies>
 
-            <div class="screening-list">
-                <div class="row">
-                    <div v-for="item of items" class="col-md-6 col-lg-4">
-                        <div class="screening-card">
-                            <a v-if="item.poster" @click.prevent="onScreening(item.id)" href="#">
-                                <img :src="item.poster" :alt="item.movie" class="img-thumbnail img-fluid">
-                            </a>
-                            <h3><a @click.prevent="onScreening(item.id)" href="#">{{item.movie}}</a></h3>
-                            <time>{{item.date}}</time>
-                            <h4>
-                                <span data-t="">Cinema hall:</span>
-                                <a @click.prevent="onHall(item.hall, item.hallName, item.hallDescription)" href="#">
-                                    {{item.hallName}}
-                                </a>
-                            </h4>
-                        </div>
-                    </div>
-                </div>
+      <div class="screening-list">
+        <div class="row">
+          <div v-for="item of items" class="col-md-6 col-lg-4">
+            <div class="screening-card">
+              <a v-if="item.poster" @click.prevent="onScreening(item.id)" href="#">
+                <img :src="item.poster" :alt="item.movie" class="img-thumbnail img-fluid">
+              </a>
+              <h3><a @click.prevent="onScreening(item.id)" href="#">{{item.movie}}</a></h3>
+              <time>{{item.date}}</time>
+              <h4>
+                <span data-t="">Cinema hall:</span>
+                <a @click.prevent="onHall(item.hall, item.hallName, item.hallDescription)" href="#">
+                  {{item.hallName}}
+                </a>
+              </h4>
             </div>
-
-            <pagination @change="load"></pagination>
-
-            <div v-show="!loading && empty" class="alert-warning alert">
-                <span data-t="">No screenings found</span>
-            </div>
-
-            <div v-show="loading" class="loader">
-                <i class="fa fa-spinner fa-spin"></i>
-            </div>
+          </div>
         </div>
+      </div>
+
+      <pagination @change="load"></pagination>
+
+      <div v-show="!loading && empty" class="alert-warning alert">
+        <span data-t="">No screenings found</span>
+      </div>
+
+      <div v-show="loading" class="loader">
+        <i class="fa fa-spinner fa-spin"></i>
+      </div>
     </div>
+  </div>
 </template>
