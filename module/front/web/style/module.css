@@ -1,126 +1,126 @@
 body {
-    --navbar-color: var(--light-warning);
-    --super-navbar-color: var(--dark-warning);
-    --sidebar-width: 0;
+  --navbar-color: var(--light-warning);
+  --super-navbar-color: var(--dark-warning);
+  --sidebar-width: 0;
 }
 .pagination > li > a {
-    padding: 6px 12px;
+  padding: 6px 12px;
 }
 
 /* LOADABLE */
 
 .loadable-container {
-    position: relative;
+  position: relative;
 }
 .loadable-container > .loader {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 101;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 101;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* PAGE */
 
 .page > h4 {
-    color: #888;
+  color: #888;
 }
 
 /* SEARCH FORM */
 
 .search-form {
-    padding: 15px 0;
-    margin: 20px 0;
-    border-top: 1px solid #ddd;
-    border-bottom: 1px solid #ddd;
+  padding: 15px 0;
+  margin: 20px 0;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
 }
 
 /* SCREENING */
 
 .screening-card {
-    margin-bottom: 40px;
+  margin-bottom: 40px;
 }
 .screening-card time {
-    display: block;
-    padding-bottom: 1rem;
-    margin-bottom: 1rem;
-    font-weight: 500;
-    border-bottom: 1px dashed #ccc;
+  display: block;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+  font-weight: 500;
+  border-bottom: 1px dashed #ccc;
 }
 .screening-card h3 {
-    margin: 1rem 0;
+  margin: 1rem 0;
 }
 .screening-card h4 {
-    font-size: 1.1rem;
+  font-size: 1.1rem;
 }
 .screening-item {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 .screening-item h3 {
-    margin:10px 0 15px 0;
+  margin:10px 0 15px 0;
 }
 .screening-item time {
-    display: block;
-    margin-bottom: 1rem;
-    font-weight: 500;
+  display: block;
+  margin-bottom: 1rem;
+  font-weight: 500;
 }
 .screening-item .duration {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 .screening .head .time {
-    margin-top: 15px;
-    font-size: 16px;
-    font-weight: bold;
+  margin-top: 15px;
+  font-size: 16px;
+  font-weight: bold;
 }
 .screening .hall {
-    margin-bottom: 40px;
+  margin-bottom: 40px;
 }
 .screening .hall h3 {
-    text-align: center;
-    padding: .5rem;
-    margin: 2rem 0;
-    background: #dfa;
-    color: #e08e0b;
-    font-size: 1.5rem;
+  text-align: center;
+  padding: .5rem;
+  margin: 2rem 0;
+  background: #dfa;
+  color: #e08e0b;
+  font-size: 1.5rem;
 }
 
 /* SEATS */
 
 .seats .seat-row {
-    white-space: nowrap;
-    text-align: center;
-    user-select: none;
+  white-space: nowrap;
+  text-align: center;
+  user-select: none;
 }
 .seats .seat {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 80px;
-    height: 60px;
-    margin: 5px;
-    border: 1px solid #ccc;
-    cursor: not-allowed;
-    color: #a00;
-    background: #edc0c0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 60px;
+  margin: 5px;
+  border: 1px solid #ccc;
+  cursor: not-allowed;
+  color: #a00;
+  background: #edc0c0;
 }
 .seats .seat.free {
-    cursor: pointer;
-    color: #0a0;
-    background: #a0f0a0;
+  cursor: pointer;
+  color: #0a0;
+  background: #a0f0a0;
 }
 .seats .seat.free:hover {
-    cursor: pointer;
-    color: #040;
-    background: #60f060;
+  cursor: pointer;
+  color: #040;
+  background: #60f060;
 }
 .seats .seat .free,
 .seats .seat.free .sold {
-    display: none;
+  display: none;
 }
 .seats .seat.free .free {
-    display: inline;
+  display: inline;
 }
