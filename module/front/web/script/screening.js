@@ -105,7 +105,8 @@ Vue.component('screening', {
             }));
         },
         formatSeatRows (items) {
-            const data = Jam.ArrayHelper.indexArrays('row', Object.values(this.seatMap));
+            const values = Object.values(this.seatMap);
+            const data = Jam.ArrayHelper.indexArrays('row', values);
             return Object.keys(data).sort().map(row => data[row]);
         }
     },
