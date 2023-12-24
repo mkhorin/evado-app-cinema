@@ -46,7 +46,7 @@ Jam.TicketPriceModelAttr = class TicketPrice extends Jam.ModelAttr {
         if (!data) {
             return null;
         }
-        let value = data.value;
+        let {value} = data;
         if (Array.isArray(data.prices)) {
             const seat = this.seatAttr.getLinkedValue();
             for (const item of data.prices) {
